@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EV vs Petrol Cost Calculator UK 2026 | EV Saves</title>
+  <meta name="description" content="Calculate exactly how much you could save switching from petrol to electric in the UK. Includes fuel, road tax, servicing, and insurance. Updated June 2026.">
+  <link rel="canonical" href="https://evsaves.com/uk/ev-vs-petrol-calculator/">
+  <meta property="og:title" content="EV vs Petrol Cost Calculator UK 2026 | EV Saves">
+  <meta property="og:description" content="Calculate your annual EV savings vs petrol in the UK. Real prices, transparent maths, instant results.">
+  <meta property="og:url" content="https://evsaves.com/uk/ev-vs-petrol-calculator/">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://evsaves.com/"},
+      {"@type": "ListItem", "position": 2, "name": "UK Calculators", "item": "https://evsaves.com/uk/"},
+      {"@type": "ListItem", "position": 3, "name": "EV vs Petrol Calculator", "item": "https://evsaves.com/uk/ev-vs-petrol-calculator/"}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much can I save switching to electric in the UK?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most UK drivers save between £800 and £1,500 per year on fuel alone when switching from petrol to electric. Including road tax and servicing savings, total annual savings often exceed £1,200 for average mileage drivers."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the average electricity cost for charging an EV at home in the UK?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "As of June 2026, the average unit rate under Ofgem's price cap is around 24.5p per kWh. EV overnight tariffs can reduce this to 7–9p per kWh."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take to break even buying an electric car in the UK?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "With a typical EV purchase premium of £6,000–£10,000 and annual running cost savings of £1,200–£1,800, most drivers break even within 4–7 years."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is EV insurance more expensive than petrol car insurance in the UK?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "EV insurance is currently around £100–£200 per year more expensive than equivalent petrol car cover in the UK, due to higher repair costs and battery replacement risk."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does an electric car really save money in the UK including purchase price?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes — over a 5-year period, most EV drivers in the UK save money overall even after accounting for the higher purchase price, provided they cover 7,000+ miles per year."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <div class="logo-icon">⚡</div>
+        EV <span>Saves</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/uk/" class="active">UK Calculators</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb">
+          <a href="/">Home</a> <span>›</span>
+          <a href="/uk/">UK Calculators</a> <span>›</span>
+          <span>EV vs Petrol Calculator</span>
+        </nav>
+        <div class="flag-badge">🇬🇧 UK Prices — Updated <span id="hero-updated">June 2026</span></div>
+        <h1>EV vs Petrol Cost Calculator UK 2026</h1>
+        <p>Enter your numbers below to see exactly how much you could save switching to electric.</p>
+      </div>
+    </section>
+
+    <div class="container" style="padding-top: 1.5rem;">
+      <div class="ad-slot ad-leaderboard">AdSense Placeholder</div>
+    </div>
+
+    <section class="section" style="padding-top: 1rem;">
+      <div class="container">
+        <div class="calc-layout">
+
+          <!-- INPUTS -->
+          <div class="calc-inputs">
+            <h2>Your Details</h2>
+
+            <p class="section-divider">Your Current Petrol Car</p>
+
+            <div class="form-group">
+              <label for="annual-mileage">Annual Mileage (miles)</label>
+              <input type="number" id="annual-mileage" value="8000" min="1000" max="50000" step="500">
+            </div>
+
+            <div class="form-group">
+              <label for="mpg">Petrol Car MPG</label>
+              <input type="number" id="mpg" value="35" min="10" max="80" step="1">
+            </div>
+
+            <div class="form-group">
+              <label for="petrol-price">Petrol Price (£/litre)</label>
+              <input type="number" id="petrol-price" value="1.34" min="0.80" max="2.50" step="0.01">
+            </div>
+
+            <div class="form-group">
+              <label for="petrol-insurance">Annual Petrol Insurance (£)</label>
+              <input type="number" id="petrol-insurance" value="800" min="200" max="5000" step="10">
+            </div>
+
+            <p class="section-divider">Your EV</p>
+
+            <div class="form-group">
+              <label for="ev-miles-per-kwh">EV Efficiency (miles/kWh)</label>
+              <input type="number" id="ev-miles-per-kwh" value="3.5" min="1.5" max="6" step="0.1">
+            </div>
+
+            <div class="form-group">
+              <label for="home-rate">Home Electricity Rate (£/kWh)</label>
+              <input type="number" id="home-rate" value="0.245" min="0.05" max="0.60" step="0.001">
+            </div>
+
+            <div class="form-group">
+              <label for="public-pct">
+                Public Charging: <span class="range-value" id="public-pct-display">20%</span>
+              </label>
+              <input type="range" id="public-pct" value="20" min="0" max="100" step="5">
+              <div class="range-labels"><span>0% (home only)</span><span>100% (public only)</span></div>
+            </div>
+
+            <div class="form-group">
+              <label for="public-rate">Public Charging Rate (£/kWh)</label>
+              <input type="number" id="public-rate" value="0.65" min="0.20" max="1.20" step="0.01">
+            </div>
+
+            <div class="form-group">
+              <label for="ev-insurance">Annual EV Insurance (£)</label>
+              <input type="number" id="ev-insurance" value="950" min="200" max="5000" step="10">
+            </div>
+
+            <p class="section-divider">Purchase Cost</p>
+
+            <div class="form-group">
+              <label for="ev-premium">EV Purchase Premium over Petrol (£)</label>
+              <input type="number" id="ev-premium" value="8000" min="0" max="30000" step="500">
+            </div>
+
+            <button class="btn-calc" onclick="calculate()">Recalculate</button>
+
+            <p class="last-updated" style="text-align:center; margin-top:0.75rem;">
+              Prices last updated: <span id="last-updated">2026-06-01</span>
+            </p>
+          </div>
+
+          <!-- RESULTS -->
+          <div class="calc-results">
+            <h2>Your Estimated Savings</h2>
+
+            <div class="result-grid">
+              <div class="result-card highlight">
+                <div class="label">Monthly Saving</div>
+                <div class="value" id="monthly-saving">£0</div>
+              </div>
+
+              <div class="result-card green">
+                <div class="label">Annual Petrol Cost</div>
+                <div class="value" id="petrol-cost">£0</div>
+              </div>
+
+              <div class="result-card green">
+                <div class="label">Annual EV Cost</div>
+                <div class="value" id="ev-cost">£0</div>
+              </div>
+
+              <div class="result-card green">
+                <div class="label">Annual Fuel Saving</div>
+                <div class="value" id="fuel-saving">£0</div>
+              </div>
+
+              <div class="result-card green">
+                <div class="label">Total Annual Saving</div>
+                <div class="value" id="total-saving">£0</div>
+              </div>
+
+              <div class="result-card green">
+                <div class="label">Break-Even Point</div>
+                <div class="value" id="breakeven">0 yrs</div>
+              </div>
+
+              <div class="result-card green">
+                <div class="label">5-Year Net Saving</div>
+                <div class="value" id="five-year">£0</div>
+              </div>
+            </div>
+
+            <p class="result-note">
+              Includes £190 road tax saving + £200 servicing saving per year.<br>
+              Insurance difference applied. See <a href="/disclaimer/">Disclaimer</a>.
+            </p>
+
+            <!-- BAR CHART -->
+            <div class="chart-container">
+              <div class="chart-title">Annual Energy Cost Comparison</div>
+              <div class="bar-chart">
+                <div class="bar-item">
+                  <div class="bar-label">Petrol</div>
+                  <div class="bar-track">
+                    <div class="bar-fill petrol" id="bar-petrol" style="width:100%;">
+                      <span class="bar-amount" id="bar-petrol-amt">£0</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="bar-item">
+                  <div class="bar-label">EV</div>
+                  <div class="bar-track">
+                    <div class="bar-fill ev" id="bar-ev" style="width:60%;">
+                      <span class="bar-amount" id="bar-ev-amt">£0</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- AFFILIATE CTA -->
+            <div class="affiliate-cta">
+              <h3>Ready to maximise your EV savings?</h3>
+              <p>Make sure you're getting the best deal on EV insurance.</p>
+              <a href="https://www.comparethemarket.com/car-insurance/" class="btn btn-accent" target="_blank" rel="noopener sponsored">
+                Compare EV Insurance Quotes →
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- HOW IT WORKS -->
+        <div class="card" style="margin-top: 2rem; max-width: 760px;">
+          <h2 style="color: var(--primary); font-size: 1.15rem; font-weight: 700; margin-bottom: 1rem;">How the Calculation Works</h2>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div>
+              <h3 style="font-size: 0.9rem; font-weight: 700; color: var(--primary); margin-bottom: 0.4rem;">Annual Petrol Cost</h3>
+              <p style="font-size: 0.85rem; color: var(--gray-600);">(Miles ÷ MPG) × 4.54609 litres/gallon × petrol price</p>
+            </div>
+            <div>
+              <h3 style="font-size: 0.9rem; font-weight: 700; color: var(--primary); margin-bottom: 0.4rem;">Annual EV Cost</h3>
+              <p style="font-size: 0.85rem; color: var(--gray-600);">Home kWh cost + public kWh cost, weighted by charging split</p>
+            </div>
+            <div>
+              <h3 style="font-size: 0.9rem; font-weight: 700; color: var(--primary); margin-bottom: 0.4rem;">Total Annual Saving</h3>
+              <p style="font-size: 0.85rem; color: var(--gray-600);">Fuel saving + £190 road tax + £200 servicing − insurance difference</p>
+            </div>
+            <div>
+              <h3 style="font-size: 0.9rem; font-weight: 700; color: var(--primary); margin-bottom: 0.4rem;">Break-Even</h3>
+              <p style="font-size: 0.85rem; color: var(--gray-600);">EV premium ÷ total annual saving = years to recover extra upfront cost</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="ad-slot ad-rectangle" style="margin-top: 2rem; margin-bottom: 0;">AdSense Placeholder</div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" style="background: var(--white);">
+      <div class="container" style="max-width: 760px;">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="card">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              How much can I save switching to electric in the UK?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Most UK drivers save between £800 and £1,500 per year on fuel alone when switching from petrol to electric, depending on mileage, home electricity tariff, and how much public charging they use. Including road tax (£190) and servicing savings (~£200), total annual savings often exceed £1,200.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              What is the average electricity cost for charging an EV at home in the UK?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              As of June 2026, the average unit rate under Ofgem's price cap is around 24.5p per kWh. If you're on an EV-specific overnight tariff such as Octopus Go, you can charge for as little as 7–9p per kWh, dramatically improving your savings. This calculator defaults to the standard cap rate.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              How long does it take to break even buying an electric car in the UK?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              With a typical EV purchase premium of £6,000–£10,000 and annual running cost savings of £1,200–£1,800, most UK drivers break even within 4–7 years. Higher annual mileage or cheaper overnight electricity tariffs significantly reduce the break-even period. Use the calculator above with your own numbers for a personalised estimate.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Is EV insurance more expensive than petrol car insurance in the UK?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              EV insurance is currently around £100–£200 per year more expensive than equivalent petrol car cover in the UK, primarily due to higher repair costs for EV-specific components and battery replacement risk. However, this gap is narrowing as insurers gain more data and the market becomes more competitive.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Does an electric car really save money in the UK including purchase price?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Yes — over a 5-year period, most EV drivers in the UK save money overall even after accounting for the higher purchase price, provided they cover 7,000+ miles per year and have access to home charging. Public-only charging significantly reduces the advantage. Use this calculator to see your personal 5-year net saving.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="/" class="logo">⚡ EV <span>Saves</span></a>
+          <p>Real EV Running Costs. Real Savings.</p>
+        </div>
+        <nav class="footer-links">
+          <a href="/about/">About</a>
+          <a href="/privacy-policy/">Privacy Policy</a>
+          <a href="/disclaimer/">Disclaimer</a>
+          <a href="/contact/">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 EV Saves. All rights reserved.</span>
+        <span>evsaves.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/assets/js/calculator.js"></script>
+  <script>
+    // Nav toggle (non-module, runs immediately)
+    document.getElementById('nav-toggle').addEventListener('click', function() {
+      document.getElementById('nav-links').classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

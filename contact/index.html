@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact EV Saves | Get in Touch</title>
+  <meta name="description" content="Contact the EV Saves team — report an error, suggest a calculator, or ask a question about EV running costs.">
+  <link rel="canonical" href="https://evsaves.com/contact/">
+  <meta property="og:title" content="Contact EV Saves | Get in Touch">
+  <meta property="og:url" content="https://evsaves.com/contact/">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <div class="logo-icon">⚡</div>
+        EV <span>Saves</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/uk/">UK Calculators</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/contact/" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb">
+          <a href="/">Home</a> <span>›</span> <span>Contact</span>
+        </nav>
+        <h1>Contact Us</h1>
+        <p>Questions, errors, suggestions — we'd love to hear from you.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; max-width: 900px;">
+          <div>
+            <h2 class="section-title">Get in Touch</h2>
+            <p style="color: var(--gray-600); margin-bottom: 1.5rem;">We typically respond within 1–2 business days.</p>
+
+            <form class="contact-form" id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="name">Your Name *</label>
+                <input type="text" id="name" name="name" required placeholder="Jane Smith" autocomplete="name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required placeholder="jane@example.com" autocomplete="email">
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject">
+                  <option value="">Select a topic...</option>
+                  <option value="error">Report a data error</option>
+                  <option value="calculator">Suggest a calculator</option>
+                  <option value="advertising">Advertising enquiry</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" required placeholder="Tell us what's on your mind..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary" style="width:100%; padding: 0.9rem;">Send Message</button>
+            </form>
+
+            <div class="form-success" id="form-success">
+              ✅ Thank you for your message! We'll get back to you within 1–2 business days.
+            </div>
+          </div>
+
+          <div>
+            <div class="card" style="margin-bottom: 1.25rem;">
+              <h3 style="color: var(--primary); font-weight: 700; margin-bottom: 0.75rem;">📊 Report a Data Error</h3>
+              <p style="font-size: 0.9rem; color: var(--gray-600);">If you believe any of our prices or calculations are incorrect, please let us know. Include which calculator, what you expected, and your source if possible. We update data promptly.</p>
+            </div>
+            <div class="card" style="margin-bottom: 1.25rem;">
+              <h3 style="color: var(--primary); font-weight: 700; margin-bottom: 0.75rem;">🔢 Suggest a Calculator</h3>
+              <p style="font-size: 0.9rem; color: var(--gray-600);">Have a specific EV or comparison in mind? We're building out the UK calculator library. Suggest a vehicle or calculation type and we'll prioritise based on demand.</p>
+            </div>
+            <div class="card">
+              <h3 style="color: var(--primary); font-weight: 700; margin-bottom: 0.75rem;">📢 Advertising</h3>
+              <p style="font-size: 0.9rem; color: var(--gray-600);">Interested in reaching UK EV drivers and buyers? Get in touch to discuss advertising and sponsorship opportunities.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="/" class="logo">⚡ EV <span>Saves</span></a>
+          <p>Real EV Running Costs. Real Savings.</p>
+        </div>
+        <nav class="footer-links">
+          <a href="/about/">About</a>
+          <a href="/privacy-policy/">Privacy Policy</a>
+          <a href="/disclaimer/">Disclaimer</a>
+          <a href="/contact/">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 EV Saves. All rights reserved.</span>
+        <span>evsaves.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('nav-toggle');
+    const navLinks = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name    = document.getElementById('name').value.trim();
+      const email   = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      if (!name || !email || !message) {
+        alert('Please fill in all required fields.');
+        return;
+      }
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        alert('Please enter a valid email address.');
+        return;
+      }
+
+      this.style.display = 'none';
+      document.getElementById('form-success').style.display = 'block';
+    });
+
+    // Responsive contact layout
+    function fixLayout() {
+      const grid = document.querySelector('.contact-form').closest('div').parentElement;
+      if (window.innerWidth < 700) {
+        grid.style.gridTemplateColumns = '1fr';
+      } else {
+        grid.style.gridTemplateColumns = '1fr 1fr';
+      }
+    }
+    fixLayout();
+    window.addEventListener('resize', fixLayout);
+  </script>
+</body>
+</html>
