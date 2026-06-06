@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EV Saves | Real EV Running Costs and Savings Calculators</title>
-  <meta name="description" content="Free EV running cost calculators for UK drivers. Compare electric vs petrol costs, find your break-even point, and discover real EV savings.">
+  <meta name="description" content="Free EV running cost calculators for UK, Australia and US drivers. Compare EV vs petrol costs, find your break-even point, and see real savings.">
   <link rel="canonical" href="https://evsaves.com/">
   <meta property="og:title" content="EV Saves | Real EV Running Costs and Savings Calculators">
-  <meta property="og:description" content="Free EV running cost calculators for UK drivers. Compare electric vs petrol costs and discover real EV savings.">
+  <meta property="og:description" content="Free EV running cost calculators for UK, Australia and US drivers. Compare EV vs petrol costs, find your break-even point, and see real savings.">
   <meta property="og:url" content="https://evsaves.com/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="EV Saves">
@@ -17,201 +17,317 @@
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "EV Saves",
-    "url": "https://evsaves.com",
-    "description": "Real EV Running Costs and Savings Calculators for UK drivers"
+    "url": "https://evsaves.com/",
+    "description": "Free EV running cost calculators for UK, Australia and US drivers.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://evsaves.com/?s={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
   }
   </script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="header-inner">
-      <a href="/" class="logo">
-        <div class="logo-icon">⚡</div>
-        EV <span>Saves</span>
-      </a>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="/" class="active">Home</a></li>
-        <li><a href="/uk/">UK Calculators</a></li>
-        <li><a href="/about/">About</a></li>
-        <li><a href="/contact/">Contact</a></li>
-      </ul>
-    </div>
-  </header>
 
-  <main>
-    <section class="hero">
-      <div class="container">
-        <h1>Real EV Running Costs.<br>Real Savings.</h1>
-        <p>Free, data-driven calculators to help UK drivers understand the true cost of switching to electric — and how much they could save.</p>
-        <a href="/uk/ev-vs-petrol-calculator/" class="btn btn-accent">Try EV vs Petrol Calculator →</a>
-      </div>
-    </section>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="logo"><div class="logo-icon">⚡</div>EV <span>Saves</span></a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="/" class="active">Home</a></li>
+      <li><a href="/uk/">🇬🇧 UK</a></li>
+      <li><a href="/au/">🇦🇺 Australia</a></li>
+      <li><a href="/us/">🇺🇸 US</a></li>
+      <li><a href="/calculators/">All Calculators</a></li>
+      <li><a href="/about/">About</a></li>
+    </ul>
+  </div>
+</header>
 
-    <div class="stats-bar">
-      <div class="stats-inner">
-        <div class="stat-item">
-          <div class="stat-value">£1,200+</div>
-          <div class="stat-label">Average annual fuel saving</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-value">£0</div>
-          <div class="stat-label">Road tax for EVs (2025)</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-value">24.5p</div>
-          <div class="stat-label">Avg home charging cost/kWh</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-value">3–4 yrs</div>
-          <div class="stat-label">Typical break-even point</div>
-        </div>
+<main>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-inner">
+      <h1>Real EV Running Costs.<br>Real Savings.</h1>
+      <p class="hero-tagline">Free, data-driven calculators for UK, Australia and US drivers. No fluff — just honest numbers.</p>
+      <div class="hero-buttons">
+        <a href="/uk/" class="btn btn-accent">UK Calculators →</a>
+        <a href="/calculators/" class="btn btn-outline-white">All Calculators →</a>
       </div>
     </div>
+  </section>
 
+  <!-- Stats Bar -->
+  <section class="stats-bar">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <span class="stat-value">£1,200+</span>
+        <span class="stat-label">Average UK annual fuel saving</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-value">24.5p</span>
+        <span class="stat-label">UK avg home charging/kWh</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-value">3.5¢–16¢</span>
+        <span class="stat-label">US electricity per mile</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-value">$1,400+</span>
+        <span class="stat-label">US annual gas saving</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Country Cards -->
+  <section class="section">
     <div class="container">
-      <div class="ad-slot ad-leaderboard">AdSense Placeholder</div>
-    </div>
+      <h2 class="section-title">EV Calculators by Country</h2>
+      <div class="card-grid card-grid-3">
 
-    <section class="section">
-      <div class="container">
-        <h2 class="section-title">UK EV Calculators</h2>
-        <p class="section-sub">Accurate, up-to-date tools built for UK electricity and petrol prices.</p>
-        <div class="card-grid">
-          <a href="/uk/ev-vs-petrol-calculator/" class="calc-card">
-            <h3>⚡ EV vs Petrol Cost Calculator</h3>
-            <p>See exactly how much you could save annually by switching from a petrol car to an electric vehicle.</p>
-            <span class="arrow">Calculate my savings →</span>
-          </a>
+        <div class="country-card">
+          <div class="country-card-header">
+            <span class="flag-badge">🇬🇧</span>
+            <h3>United Kingdom</h3>
+            <p class="country-stat">Average saving: <strong>£1,200+/yr</strong></p>
+          </div>
+          <ul class="country-calc-list">
+            <li><a href="/uk/ev-vs-petrol-calculator/">EV vs Petrol Calculator</a></li>
+            <li><a href="/uk/ev-charging-calculator/">EV Charging Cost Calculator</a></li>
+            <li><a href="/uk/ev-tco-calculator/">Total Cost of Ownership</a></li>
+            <li><a href="/uk/ev-salary-sacrifice-calculator/">Salary Sacrifice Calculator</a></li>
+          </ul>
+          <a href="/uk/" class="btn btn-accent btn-block">All UK Calculators →</a>
         </div>
-        <p style="margin-top:1.5rem; color: var(--gray-600); font-size:0.9rem;">More calculators coming soon: EV Charging Cost, Tesla Model 3 & Y running costs, BYD Atto 3.</p>
-      </div>
-    </section>
 
-    <section class="section" style="background: var(--white);">
-      <div class="container">
-        <h2 class="section-title">Why EV Saves?</h2>
-        <p class="section-sub">We keep it honest — real numbers, real sources, regularly updated.</p>
-        <div class="card-grid">
-          <div class="feature-card">
-            <div class="icon">📊</div>
-            <h3>Real UK Prices</h3>
-            <p>Our calculators use current UK petrol and electricity prices, updated regularly so your estimates stay accurate.</p>
+        <div class="country-card">
+          <div class="country-card-header">
+            <span class="flag-badge">🇦🇺</span>
+            <h3>Australia</h3>
+            <p class="country-stat">Average saving: <strong>$600–$1,000/yr</strong></p>
           </div>
-          <div class="feature-card">
-            <div class="icon">🔢</div>
-            <h3>Transparent Maths</h3>
-            <p>Every calculation is explained. No black boxes — you can see exactly how we arrive at each figure.</p>
-          </div>
-          <div class="feature-card">
-            <div class="icon">🚗</div>
-            <h3>Full Cost Picture</h3>
-            <p>We include fuel, charging, road tax, servicing, and insurance differences — not just the headline saving.</p>
-          </div>
-          <div class="feature-card">
-            <div class="icon">🆓</div>
-            <h3>Always Free</h3>
-            <p>No account required, no paywall. Just enter your numbers and get instant results.</p>
-          </div>
+          <ul class="country-calc-list">
+            <li><a href="/au/ev-vs-petrol-calculator/">EV vs Petrol Calculator</a></li>
+            <li><a href="/au/ev-charging-calculator/">EV Charging Cost Calculator</a></li>
+            <li><a href="/au/ev-tco-calculator/">Total Cost of Ownership</a></li>
+            <li><a href="/au/ev-stamp-duty-calculator/">Stamp Duty Calculator</a></li>
+          </ul>
+          <a href="/au/" class="btn btn-accent btn-block">All AU Calculators →</a>
         </div>
-      </div>
-    </section>
 
-    <section class="section">
-      <div class="container" style="max-width: 760px;">
-        <h2 class="section-title">Frequently Asked Questions</h2>
-        <div class="card">
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              How much can I save switching to electric in the UK?
-              <span class="faq-icon">+</span>
-            </button>
-            <div class="faq-answer">
-              Most UK drivers save between £800 and £1,500 per year on fuel alone when switching from petrol to electric, depending on mileage, home electricity tariff, and how much public charging they use. With road tax and servicing savings included, total annual savings often exceed £1,200.
-            </div>
+        <div class="country-card">
+          <div class="country-card-header">
+            <span class="flag-badge">🇺🇸</span>
+            <h3>United States</h3>
+            <p class="country-stat">Average saving: <strong>$1,400+/yr</strong></p>
           </div>
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              What is the average electricity cost for charging an EV at home in the UK?
-              <span class="faq-icon">+</span>
-            </button>
-            <div class="faq-answer">
-              As of mid-2026, the average unit rate under Ofgem's price cap is around 24.5p per kWh. If you're on an EV-specific overnight tariff (like Octopus Go), you can charge for as little as 7–9p per kWh, dramatically improving your savings.
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              How long does it take to break even buying an electric car in the UK?
-              <span class="faq-icon">+</span>
-            </button>
-            <div class="faq-answer">
-              With a typical EV purchase premium of £6,000–£10,000 and annual running cost savings of £1,200–£1,800, most drivers break even within 4–7 years. Higher mileage drivers, or those on cheap overnight tariffs, often break even faster. Use our calculator to get a personalised estimate.
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              Is EV insurance more expensive than petrol car insurance in the UK?
-              <span class="faq-icon">+</span>
-            </button>
-            <div class="faq-answer">
-              EV insurance is currently around £100–£200 per year more expensive than equivalent petrol car cover in the UK, due to higher repair costs and battery replacement risk. However, this gap is narrowing as insurers gain more EV claims data and competition increases.
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              Does an electric car really save money in the UK including purchase price?
-              <span class="faq-icon">+</span>
-            </button>
-            <div class="faq-answer">
-              Yes — over a 5-year period, most EV drivers in the UK save money overall even after accounting for the higher purchase price. Fuel savings, zero road tax, and lower servicing costs typically outweigh the EV premium for drivers covering 7,000+ miles per year.
-            </div>
-          </div>
+          <ul class="country-calc-list">
+            <li><a href="/us/ev-vs-gas-calculator/">EV vs Gas Calculator</a></li>
+            <li><a href="/us/ev-charging-calculator/">EV Charging Cost Calculator</a></li>
+            <li><a href="/us/ev-tco-calculator/">Total Cost of Ownership</a></li>
+            <li><a href="/us/ev-tax-credit-calculator/">Federal Tax Credit Calculator</a></li>
+          </ul>
+          <a href="/us/" class="btn btn-accent btn-block">All US Calculators →</a>
         </div>
-      </div>
-    </section>
 
-    <div class="container" style="padding-bottom:2rem;">
-      <div class="ad-slot ad-rectangle">AdSense Placeholder</div>
-    </div>
-  </main>
-
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <a href="/" class="logo">⚡ EV <span>Saves</span></a>
-          <p>Real EV Running Costs. Real Savings. Free calculators for UK drivers.</p>
-        </div>
-        <nav class="footer-links">
-          <a href="/about/">About</a>
-          <a href="/privacy-policy/">Privacy Policy</a>
-          <a href="/disclaimer/">Disclaimer</a>
-          <a href="/contact/">Contact</a>
-        </nav>
-      </div>
-      <div class="footer-bottom">
-        <span>© 2026 EV Saves. All rights reserved.</span>
-        <span>evsaves.com</span>
       </div>
     </div>
-  </footer>
+  </section>
 
-  <script>
-    const toggle = document.getElementById('nav-toggle');
-    const navLinks = document.getElementById('nav-links');
-    toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+  <!-- Popular Calculators -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Popular Calculators</h2>
+      <div class="card-grid card-grid-3">
 
-    document.querySelectorAll('.faq-question').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const answer = btn.nextElementSibling;
-        const isOpen = answer.classList.contains('open');
-        document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
-        document.querySelectorAll('.faq-question').forEach(b => b.setAttribute('aria-expanded', 'false'));
-        if (!isOpen) { answer.classList.add('open'); btn.setAttribute('aria-expanded', 'true'); }
-      });
-    });
-  </script>
+        <a href="/uk/ev-vs-petrol-calculator/" class="calc-card">
+          <div class="calc-card-flag">🇬🇧</div>
+          <h3>EV vs Petrol UK</h3>
+          <p>Compare your real running costs switching from petrol to electric in the UK.</p>
+          <span class="calc-card-cta">Calculate →</span>
+        </a>
+
+        <a href="/us/ev-vs-gas-calculator/" class="calc-card">
+          <div class="calc-card-flag">🇺🇸</div>
+          <h3>EV vs Gas US</h3>
+          <p>See your potential savings switching from gas to electric in the United States.</p>
+          <span class="calc-card-cta">Calculate →</span>
+        </a>
+
+        <a href="/au/ev-vs-petrol-calculator/" class="calc-card">
+          <div class="calc-card-flag">🇦🇺</div>
+          <h3>EV vs Petrol AU</h3>
+          <p>Calculate EV savings vs petrol with Australian fuel and electricity prices.</p>
+          <span class="calc-card-cta">Calculate →</span>
+        </a>
+
+        <a href="/uk/ev-salary-sacrifice-calculator/" class="calc-card">
+          <div class="calc-card-flag">🇬🇧</div>
+          <h3>Salary Sacrifice UK</h3>
+          <p>See how much you save leasing an EV through your employer's salary sacrifice scheme.</p>
+          <span class="calc-card-cta">Calculate →</span>
+        </a>
+
+        <a href="/us/ev-tax-credit-calculator/" class="calc-card">
+          <div class="calc-card-flag">🇺🇸</div>
+          <h3>EV Tax Credit US</h3>
+          <p>Find out if your EV qualifies for the $7,500 federal tax credit and what you save.</p>
+          <span class="calc-card-cta">Calculate →</span>
+        </a>
+
+        <a href="/au/ev-stamp-duty-calculator/" class="calc-card">
+          <div class="calc-card-flag">🇦🇺</div>
+          <h3>EV Stamp Duty AU</h3>
+          <p>Check stamp duty exemptions and concessions for EVs in your Australian state.</p>
+          <span class="calc-card-cta">Calculate →</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- AdSense Leaderboard -->
+  <div class="ad-leaderboard">
+    <div class="container">
+      <div class="ad-placeholder">Advertisement</div>
+    </div>
+  </div>
+
+  <!-- Why EV Saves -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Why EV Saves?</h2>
+      <div class="card-grid card-grid-4">
+
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3>Real Prices</h3>
+          <p>We use live and regularly updated fuel, electricity and charging prices for each region — not guesses or industry averages from years ago.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🔢</div>
+          <h3>Transparent Maths</h3>
+          <p>Every calculation is shown step by step. You can see exactly how we arrived at each number, so you can trust the result.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🖼️</div>
+          <h3>Full Cost Picture</h3>
+          <p>We include fuel, charging, maintenance, insurance, tax and depreciation — not just the headline fuel saving that looks good in brochures.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🆓</div>
+          <h3>Always Free</h3>
+          <p>No sign-up, no paywall, no premium tier. All calculators are free to use for everyone, forever.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            How much can I really save by switching to an EV?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Savings vary widely by region, driving habits and vehicle choice, but in the UK most drivers save £800–£1,500 per year on fuel alone after switching to home charging. US drivers typically save $1,000–$1,800 per year on gas, and Australian drivers save $600–$1,200. Use our country-specific calculators to get a personalised figure based on your actual mileage and local prices.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Are the prices in your calculators up to date?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>We update our default prices regularly — typically monthly — drawing from official sources including Ofgem (UK electricity), RAC Fuel Watch (UK petrol), NRMA (Australian fuel), and the US Energy Information Administration (EIA). Each calculator page shows a "last updated" date so you always know how fresh the data is. You can also enter your own prices for a more precise result.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do your calculators account for public charging costs?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. Our EV vs petrol/gas calculators let you set a home charging percentage and a public/rapid charging rate separately, so you get an accurate blended cost if you can't always charge at home. Public charging costs can be 2–3× higher than home rates, which makes a significant difference to the savings calculation.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What is the break-even point for buying an EV?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>The break-even point — the number of years until total EV ownership costs fall below an equivalent petrol or gas car — depends on the price premium of the EV, your annual mileage and local fuel prices. Our Total Cost of Ownership (TCO) calculators compute this for you. In the UK, break-even is typically 3–6 years for a new EV bought outright at 2026 prices.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Are EV running cost calculators the same for all countries?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>No — and that's exactly why we built separate calculators for each region. Fuel prices, electricity tariffs, government incentives, road tax rules and vehicle efficiency ratings all differ significantly between the UK, Australia and the US. Using a UK calculator for an Australian driver would give meaningless results. Select your country above for accurate, locally-priced calculations.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="/" class="logo">⚡ EV <span>Saves</span></a>
+        <p>Real EV Running Costs. Real Savings. Free calculators for UK, Australia and US drivers.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Calculators</h4>
+        <ul>
+          <li><a href="/uk/ev-vs-petrol-calculator/">EV vs Petrol UK</a></li>
+          <li><a href="/au/ev-vs-petrol-calculator/">EV vs Petrol AU</a></li>
+          <li><a href="/us/ev-vs-gas-calculator/">EV vs Gas US</a></li>
+          <li><a href="/calculators/">All Calculators</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <ul>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/privacy-policy/">Privacy Policy</a></li>
+          <li><a href="/disclaimer/">Disclaimer</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 EV Saves. All rights reserved.</span>
+      <span>evsaves.com — Real EV Running Costs. Real Savings.</span>
+    </div>
+  </div>
+</footer>
+
+<script type="module">
+  import { initNav, initFaq } from '/assets/js/utils.js';
+  initNav();
+  initFaq();
+</script>
+
 </body>
 </html>

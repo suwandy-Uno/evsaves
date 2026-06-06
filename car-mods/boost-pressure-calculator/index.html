@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boost Pressure Calculator | Turbo / Supercharger | EV Saves</title>
+  <meta name="description" content="Calculate the target boost pressure (psi / bar) needed to hit your horsepower goal on a turbocharged or supercharged engine.">
+  <link rel="canonical" href="https://evsaves.com/car-mods/boost-pressure-calculator/">
+  <meta property="og:title" content="Boost Pressure Calculator | Turbo / Supercharger | EV Saves">
+  <meta property="og:url" content="https://evsaves.com/car-mods/boost-pressure-calculator/">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://evsaves.com/"},{"@type":"ListItem","position":2,"name":"Car Mod Calculators","item":"https://evsaves.com/car-mods/"},{"@type":"ListItem","position":3,"name":"Boost Pressure Calculator","item":"https://evsaves.com/car-mods/boost-pressure-calculator/"}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="logo"><div class="logo-icon">⚡</div>EV <span>Saves</span></a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/uk/">🇬🇧 UK</a></li>
+        <li><a href="/au/">🇦🇺 Australia</a></li>
+        <li><a href="/us/">🇺🇸 US</a></li>
+        <li><a href="/calculators/">All Calculators</a></li>
+        <li><a href="/about/">About</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb"><a href="/">Home</a> <span>›</span> <a href="/car-mods/">Car Mod Calculators</a> <span>›</span> <span>Boost Pressure Calculator</span></nav>
+        <h1>Boost Pressure Calculator</h1>
+        <p>Calculate the target boost pressure (psi or bar) required to reach your horsepower goal on a turbocharged or supercharged engine.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="ad-slot ad-leaderboard">AdSense 728x90 placeholder</div>
+        <div class="calc-intro">
+          <h2>Understanding Boost Pressure and Power</h2>
+          <p>Boost pressure is the gauge pressure above atmospheric that a turbocharger or supercharger forces into the engine intake manifold. More boost means more air (and therefore more fuel) enters each cylinder per cycle, resulting in more power. Understanding the relationship between boost pressure and power output is essential for setting realistic targets and choosing appropriate supporting modifications.</p>
+          <p><strong>The pressure ratio principle</strong>: Power output from a forced induction engine scales (approximately) with the pressure ratio — the ratio of absolute intake pressure to atmospheric pressure. At sea level, atmospheric absolute pressure is 14.7 psia. Running 14.7 psi of gauge boost gives you an absolute pressure of 29.4 psia — a 2:1 pressure ratio. Doubling the absolute pressure roughly doubles the air mass entering the engine, and (with appropriate fuelling) roughly doubles the power output versus naturally aspirated.</p>
+          <p><strong>Practical limitations</strong>: This linear relationship breaks down at higher boost levels due to heat, charge air density losses, and mechanical stress. An intercooler is essential above 10 psi (0.7 bar) of boost on most engines to prevent detonation from high charge temperatures. Above 20 psi (1.4 bar), most stock fuel systems struggle to provide adequate fuel enrichment, requiring an upgraded fuel pump, larger injectors, and a flex fuel or E85 conversion for reliable power.</p>
+          <p><strong>Engine preparation matters</strong>: The amount of boost an engine can safely run depends on its build quality. A stock cast-piston engine on a modern turbo platform (like the VW/Audi EA888) is typically safe to 20–22 psi on a good 98-octane tune. Above that, forged pistons and connecting rods become necessary. Classic engines with lower compression ratios (8:1–9:1) can often run higher boost on stock internals due to reduced detonation risk.</p>
+          <p>Our calculator uses the simplified pressure ratio model to estimate target boost. Use it to understand the relationship between boost and power before buying parts — then consult a specialist tuner for your specific application.</p>
+        </div>
+        <div id="calc-root"></div>
+        <div class="ad-slot ad-rectangle">AdSense 300x250 placeholder</div>
+        <div class="disclaimer-note">Simplified estimate using pressure ratio principles. Actual power and safe boost levels depend on engine condition, fuel quality, tune, cooling, and many other variables. Consult a qualified tuner before increasing boost. See our <a href="/disclaimer/">Disclaimer</a>.</div>
+      </div>
+    </section>
+    <section class="section section-white">
+      <div class="container-narrow">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="card">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">What is the difference between gauge pressure and absolute pressure? <span class="faq-icon">+</span></button>
+            <div class="faq-answer">Gauge pressure (psi g or psig) measures pressure above atmospheric. Absolute pressure (psia) is gauge pressure plus atmospheric (14.7 psi at sea level). When a boost gauge reads 10 psi, that's gauge pressure — the actual manifold absolute pressure (MAP) is 10 + 14.7 = 24.7 psia. Engine tuners work with MAP (absolute) for fuel and timing calculations, while boost gauges show gauge pressure. Our calculator works in gauge pressure (what your boost gauge shows).</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">How much boost can a standard turbocharged engine run? <span class="faq-icon">+</span></button>
+            <div class="faq-answer">It varies by engine, but a rule of thumb for modern turbocharged engines in good condition: 6–10 psi over factory boost is typically safe with a quality tune on 93–98 octane fuel. Many popular platforms (EA888, B58, EcoBoost, GR Yaris) run 20–26 psi stock and can safely reach 25–32 psi with a stage 2 tune and supporting mods. Older engines or those with higher compression ratios have lower safe limits. A reputable tuner will advise based on your specific engine's data logging.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">Does altitude affect boost pressure and power? <span class="faq-icon">+</span></button>
+            <div class="faq-answer">Yes significantly. At altitude, atmospheric pressure is lower — at 5,000 feet, it's approximately 12.2 psi instead of 14.7 psi at sea level. A naturally aspirated engine loses 3% of power per 1,000 feet of altitude (roughly 15% at 5,000 feet). A turbocharged engine can partially compensate by running more boost — many modern turbo ECUs include altitude compensation. However, the turbo has to work harder (spin faster) to achieve the same pressure ratio, which can stress it more in sustained high-altitude operation.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">What fuel octane do I need for higher boost? <span class="faq-icon">+</span></button>
+            <div class="faq-answer">Higher boost means higher cylinder pressures and temperatures, increasing the risk of pre-ignition (knock/detonation). Premium 95–98 octane fuel (E10 or E5) is the minimum for any significant boost increase. On E85 (85% ethanol), the detonation resistance is dramatically higher due to E85's high effective octane (105+) and cooling effect — it's common to see 30–50% more power from the same engine on E85 vs premium petrol at equivalent boost levels.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">What does a boost controller do? <span class="faq-icon">+</span></button>
+            <div class="faq-answer">A boost controller (manual or electronic) regulates the pressure signal sent to the wastegate actuator. By raising the pressure threshold at which the wastegate opens, you increase boost above the factory setpoint. Manual boost controllers (bleeder valves) are simple and cheap but not precise. Electronic boost controllers (used in modern ECUs or standalone units) can vary boost by RPM, gear, or driving mode, providing much more sophisticated boost management and the ability to run higher peak boost with safer limits elsewhere in the RPM range.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand"><a href="/" class="logo">⚡ EV <span>Saves</span></a><p>Real EV Running Costs. Real Savings. Car Mod Calculators.</p></div>
+        <div class="footer-col"><h4>Car Mod Calculators</h4><ul><li><a href="/car-mods/hp-gain-calculator/">HP Gain</a></li><li><a href="/car-mods/turbo-size-calculator/">Turbo Size</a></li><li><a href="/car-mods/">All Car Mods</a></li></ul></div>
+        <div class="footer-col"><h4>Site</h4><ul><li><a href="/about/">About</a></li><li><a href="/disclaimer/">Disclaimer</a></li><li><a href="/contact/">Contact</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 EV Saves. All rights reserved.</span><span>evsaves.com</span></div>
+    </div>
+  </footer>
+  <script type="module">
+    import { initNav, initFaq } from '/assets/js/utils.js';
+    import { initCalculator } from '/assets/js/calculators.js';
+    initNav(); initFaq();
+    initCalculator('boost-pressure', 'us', {});
+  </script>
+</body>
+</html>

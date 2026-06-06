@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horsepower Gain Calculator | Car Modification | EV Saves</title>
+  <meta name="description" content="Calculate estimated horsepower after a car modification. ECU remap, intake, exhaust, intercooler, forced induction — see your new HP figure instantly.">
+  <link rel="canonical" href="https://evsaves.com/car-mods/hp-gain-calculator/">
+  <meta property="og:title" content="Horsepower Gain Calculator | Car Modification | EV Saves">
+  <meta property="og:url" content="https://evsaves.com/car-mods/hp-gain-calculator/">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://evsaves.com/"},{"@type":"ListItem","position":2,"name":"Car Mod Calculators","item":"https://evsaves.com/car-mods/"},{"@type":"ListItem","position":3,"name":"HP Gain Calculator","item":"https://evsaves.com/car-mods/hp-gain-calculator/"}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="logo"><div class="logo-icon">⚡</div>EV <span>Saves</span></a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/uk/">🇬🇧 UK</a></li>
+        <li><a href="/au/">🇦🇺 Australia</a></li>
+        <li><a href="/us/">🇺🇸 US</a></li>
+        <li><a href="/calculators/">All Calculators</a></li>
+        <li><a href="/about/">About</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb"><a href="/">Home</a> <span>›</span> <a href="/car-mods/">Car Mod Calculators</a> <span>›</span> <span>HP Gain Calculator</span></nav>
+        <h1>Horsepower Gain Calculator</h1>
+        <p>Enter your base horsepower and estimated modification gain percentage to calculate your new output figure.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="ad-slot ad-leaderboard">AdSense 728x90 placeholder</div>
+        <div class="calc-intro">
+          <h2>How Much Power Does Your Modification Add?</h2>
+          <p>Horsepower gains from car modifications vary enormously depending on the type of modification, your starting power level, and the supporting modifications in place. Understanding realistic expectations prevents expensive disappointment.</p>
+          <p><strong>ECU remap / tune</strong>: The single most cost-effective modification for most turbocharged petrol and diesel engines. A Stage 1 remap (no hardware changes required) typically adds 15–30% on a diesel and 10–20% on a petrol turbo engine. On naturally aspirated engines, gains are modest — typically 2–8%. The gain percentage depends heavily on how conservative the factory tune is.</p>
+          <p><strong>Cold air intake</strong>: On its own, a performance intake adds 5–15 hp on most engines. Gains are more significant when combined with a remap. The improvement comes from reducing intake air temperature and restriction. The cooler, denser air allows the engine to burn more fuel, producing more power.</p>
+          <p><strong>Performance exhaust system</strong>: A cat-back exhaust system adds 5–15 hp on most engines by reducing exhaust backpressure. A full turbo-back system (downpipe included) can add 20–40 hp on a turbocharged engine. Note that downpipe modifications may affect emissions compliance — check local regulations.</p>
+          <p><strong>Intercooler upgrade</strong>: On a turbocharged engine, a larger front-mount intercooler reduces charge air temperature, allowing for more aggressive timing and boost. Gains of 20–60 hp are realistic when combined with a remap. Essential for sustained power on hot days or hard driving.</p>
+          <p><strong>Turbocharger upgrade</strong>: A larger turbo can dramatically increase peak power but typically trades low-end response for peak output. Combined with fuel system upgrades and a remap, gains of 50–200 hp over stock are achievable with a correctly sized turbo upgrade.</p>
+          <p>Always verify gains on a rolling road (dyno) before and after modifications to get accurate, measured results rather than manufacturer claims.</p>
+        </div>
+        <div id="calc-root"></div>
+        <div class="ad-slot ad-rectangle">AdSense 300x250 placeholder</div>
+        <div class="disclaimer-note">These calculations are mathematical approximations. Actual horsepower gains depend on engine condition, supporting modifications, fuel quality, tune quality, and many other variables. Always verify on a dynamometer. See our <a href="/disclaimer/">Disclaimer</a>.</div>
+      </div>
+    </section>
+    <section class="section section-white">
+      <div class="container-narrow">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="card">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">What modification gives the most horsepower per pound spent? <span class="faq-icon">+</span></button>
+            <div class="faq-answer">An ECU remap/tune consistently delivers the best power-per-pound. On a turbocharged diesel, a Stage 1 remap costs £300–£600 and adds 40–80 hp and significant torque. On a petrol turbo, gains of 30–60 hp for a similar cost are typical. No other modification approaches this efficiency on a turbocharged engine.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">What is the difference between BHP, HP and PS? <span class="faq-icon">+</span></button>
+            <div class="faq-answer">BHP (brake horsepower) is the traditional UK/AU measurement. HP (horsepower) is the US standard. PS (Pferdestärke, from German) is the metric equivalent. For practical purposes: 1 PS = 0.9863 HP ≈ 0.9863 BHP. The differences are small — a car quoted at 200 PS, 200 HP, or 200 BHP are all very similar. Our calculator uses generic "hp" — apply the same percentage gain regardless of which unit your car is rated in.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">How accurate are dyno figures vs manufacturer quoted power? <span class="faq-icon">+</span></button>
+            <div class="faq-answer">Manufacturer figures are typically measured at the flywheel (engine output). Dyno (rolling road) figures measure at the wheels and are lower due to drivetrain losses — typically 10–15% for FWD, 12–17% for RWD, 15–20% for AWD. A car quoted at 200 bhp might show 165–175 bhp on a rolling road. This is normal. Compare before/after dyno figures on the same setup for accurate modification gains.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">What supporting modifications does a Stage 2 tune require? <span class="faq-icon">+</span></button>
+            <div class="faq-answer">A Stage 2 tune (requiring hardware changes) typically needs: an uprated intercooler, a performance air intake (panel filter or cold air intake), a high-flow downpipe (decat or sports cat), and often a stronger clutch. The tune is then optimised for these components working together. Stage 2 might add 60–120 hp over stock on a popular turbocharged hatchback platform.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">Will more horsepower affect my car insurance? <span class="faq-icon">+</span></button>
+            <div class="faq-answer">Yes — any power-increasing modification must be declared to your insurer in the UK. Failure to declare is non-disclosure and can void your policy. Use our <a href="/uk/modified-car-insurance-impact-calculator/">Modified Car Insurance Impact Calculator</a> to estimate how much more your premium may cost.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand"><a href="/" class="logo">⚡ EV <span>Saves</span></a><p>Real EV Running Costs. Real Savings. Car Mod Calculators.</p></div>
+        <div class="footer-col"><h4>Car Mod Calculators</h4><ul><li><a href="/car-mods/zero-to-sixty-calculator/">0-60 Calculator</a></li><li><a href="/car-mods/quarter-mile-calculator/">Quarter Mile</a></li><li><a href="/car-mods/turbo-size-calculator/">Turbo Size</a></li><li><a href="/car-mods/">All Car Mods</a></li></ul></div>
+        <div class="footer-col"><h4>Site</h4><ul><li><a href="/about/">About</a></li><li><a href="/disclaimer/">Disclaimer</a></li><li><a href="/contact/">Contact</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 EV Saves. All rights reserved.</span><span>evsaves.com</span></div>
+    </div>
+  </footer>
+  <script type="module">
+    import { initNav, initFaq } from '/assets/js/utils.js';
+    import { initCalculator } from '/assets/js/calculators.js';
+    initNav(); initFaq();
+    initCalculator('hp-gain', 'us', {});
+  </script>
+</body>
+</html>

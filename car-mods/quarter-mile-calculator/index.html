@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quarter Mile Calculator | Drag Strip ET | EV Saves</title>
+  <meta name="description" content="Estimate quarter mile elapsed time (ET) and trap speed using the Wallace Racing formula. Based on vehicle weight and horsepower for drag strip planning.">
+  <link rel="canonical" href="https://evsaves.com/car-mods/quarter-mile-calculator/">
+  <meta property="og:title" content="Quarter Mile Calculator | Drag Strip ET | EV Saves">
+  <meta property="og:url" content="https://evsaves.com/car-mods/quarter-mile-calculator/">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://evsaves.com/"},{"@type":"ListItem","position":2,"name":"Car Mod Calculators","item":"https://evsaves.com/car-mods/"},{"@type":"ListItem","position":3,"name":"Quarter Mile Calculator","item":"https://evsaves.com/car-mods/quarter-mile-calculator/"}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="logo"><div class="logo-icon">⚡</div>EV <span>Saves</span></a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/uk/">🇬🇧 UK</a></li>
+        <li><a href="/au/">🇦🇺 Australia</a></li>
+        <li><a href="/us/">🇺🇸 US</a></li>
+        <li><a href="/calculators/">All Calculators</a></li>
+        <li><a href="/about/">About</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb"><a href="/">Home</a> <span>›</span> <a href="/car-mods/">Car Mod Calculators</a> <span>›</span> <span>Quarter Mile Calculator</span></nav>
+        <h1>Quarter Mile Calculator</h1>
+        <p>Estimate drag strip elapsed time (ET) and trap speed using the widely-used Wallace Racing formula: ET = 6.269 × ∛(weight/HP).</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="ad-slot ad-leaderboard">AdSense 728x90 placeholder</div>
+        <div class="calc-intro">
+          <h2>The Wallace Racing Quarter Mile Formula Explained</h2>
+          <p>The Wallace Racing quarter mile formula — ET = 6.269 × (weight/horsepower)^(1/3) — is one of the most widely used drag racing performance estimators. Originally developed using empirical data from countless drag strip runs, it provides a reliable baseline estimate for well-prepared cars running on a prepped surface with an experienced driver.</p>
+          <p><strong>What the formula assumes</strong>: The vehicle has adequate traction to put power to the ground efficiently. Launches are consistent and near-optimal. The car is in proper mechanical tune. The track surface is prepped (salted/prepped drag strip, not a cold public road). Under these conditions, the formula is surprisingly accurate — typically within 0.2–0.5 seconds for most cars in the 10–16 second bracket.</p>
+          <p><strong>When the formula underestimates ET</strong>: High-powered rear-wheel drive cars that spin on launch will run slower than predicted. Automatic transmissions with slow shift times add time. Aerodynamic drag becomes significant above 120 mph and isn't captured in this formula. Poor driver technique (late reactions, bad shifts) adds time.</p>
+          <p><strong>When the formula overestimates ET</strong>: AWD cars with excellent traction management often run faster than predicted. Cars with very aggressive launch control (like EVs or modern performance AWD cars) can beat the formula by 0.3–0.8 seconds. Highly prepped drag-specific tyres that provide exceptional grip also produce faster runs than predicted.</p>
+          <p><strong>The trap speed calculation</strong>: Trap speed (mph at the finish line) is estimated as 234 ÷ ET. This relationship holds reasonably well for most production-based cars. Highly aerodynamically efficient or low-drag vehicles may trap slightly faster than predicted.</p>
+          <p>Use this calculator to plan your build target and understand the relationship between power, weight reduction, and elapsed time before investing in modifications.</p>
+        </div>
+        <div id="calc-root"></div>
+        <div class="ad-slot ad-rectangle">AdSense 300x250 placeholder</div>
+        <div class="disclaimer-note">Formula-based estimate. Actual drag strip results depend on driver skill, traction, weather conditions, track prep, and vehicle setup. Always follow drag strip safety procedures. See our <a href="/disclaimer/">Disclaimer</a>.</div>
+      </div>
+    </section>
+    <section class="section section-white">
+      <div class="container-narrow">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="card">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">How accurate is the Wallace Racing quarter mile formula? <span class="faq-icon">+</span></button>
+            <div class="faq-answer">For well-prepared naturally aspirated and mildly modified cars on a prepped drag strip surface, the Wallace formula is typically accurate within 0.2–0.5 seconds. It works best for cars running 11–16 second ETs. At very high power levels with traction issues, or for EVs with instant torque delivery, actual times can be significantly different from the prediction.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">What is a good quarter mile time for a street car? <span class="faq-icon">+</span></button>
+            <div class="faq-answer">Context matters, but general benchmarks: 16+ seconds = standard economy car, 14–16 seconds = average family car, 12–14 seconds = performance car / hot hatch, 11–12 seconds = sports car / muscle car, 10–11 seconds = supercar / heavily modified car, under 10 seconds = race car / extreme build. Sub-10 second street-legal cars exist but are genuinely rare on public roads.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">How does reducing weight improve quarter mile times? <span class="faq-icon">+</span></button>
+            <div class="faq-answer">Weight reduction directly improves the W/HP ratio in the formula. For a 3,500 lb car with 300 hp: removing 100 lbs reduces ET by approximately 0.05–0.08 seconds. Removing 500 lbs (significant but achievable with cage, lightweight seats, removal of rear seats/audio) improves ET by 0.25–0.4 seconds. Weight reduction also helps traction by reducing the load the tyres must manage during launch.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">Why do EVs often beat their predicted quarter mile times? <span class="faq-icon">+</span></button>
+            <div class="faq-answer">Electric motors provide peak torque instantly and can modulate power delivery to each wheel with millisecond precision via AWD torque vectoring. This allows near-perfect launches without wheelspin. The Tesla Model S Plaid at ~4,900 lbs and ~1,020 hp would be predicted at around 10.3 seconds by the formula — it actually runs 9.2–9.4 seconds due to traction technology that a petrol car cannot match at that weight/power level.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">What is the 60-foot time and why does it matter? <span class="faq-icon">+</span></button>
+            <div class="faq-answer">The 60-foot time measures how fast the car travels the first 60 feet of the quarter mile — the launch phase. It's the most driver-dependent portion and heavily influenced by traction. A good street car 60-foot time is 1.8–2.2 seconds. Drag-prepped cars on sticky tyres can achieve 1.3–1.6 seconds. Improving your 60-foot by 0.1 seconds typically improves your overall ET by 0.15–0.2 seconds, making launch technique one of the highest-value skills in drag racing.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand"><a href="/" class="logo">⚡ EV <span>Saves</span></a><p>Real EV Running Costs. Real Savings. Car Mod Calculators.</p></div>
+        <div class="footer-col"><h4>Car Mod Calculators</h4><ul><li><a href="/car-mods/hp-gain-calculator/">HP Gain</a></li><li><a href="/car-mods/zero-to-sixty-calculator/">0-60 Calculator</a></li><li><a href="/car-mods/turbo-size-calculator/">Turbo Size</a></li><li><a href="/car-mods/">All Car Mods</a></li></ul></div>
+        <div class="footer-col"><h4>Site</h4><ul><li><a href="/about/">About</a></li><li><a href="/disclaimer/">Disclaimer</a></li><li><a href="/contact/">Contact</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 EV Saves. All rights reserved.</span><span>evsaves.com</span></div>
+    </div>
+  </footer>
+  <script type="module">
+    import { initNav, initFaq } from '/assets/js/utils.js';
+    import { initCalculator } from '/assets/js/calculators.js';
+    initNav(); initFaq();
+    initCalculator('quarter-mile', 'us', {});
+  </script>
+</body>
+</html>

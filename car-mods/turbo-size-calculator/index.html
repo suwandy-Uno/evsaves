@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turbo Size Calculator | Forced Induction Sizing | EV Saves</title>
+  <meta name="description" content="Calculate required airflow (CFM), pressure ratio, and estimated boost pressure for your target horsepower. Turbo sizing guide for forced induction builds.">
+  <link rel="canonical" href="https://evsaves.com/car-mods/turbo-size-calculator/">
+  <meta property="og:title" content="Turbo Size Calculator | Forced Induction Sizing | EV Saves">
+  <meta property="og:url" content="https://evsaves.com/car-mods/turbo-size-calculator/">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://evsaves.com/"},{"@type":"ListItem","position":2,"name":"Car Mod Calculators","item":"https://evsaves.com/car-mods/"},{"@type":"ListItem","position":3,"name":"Turbo Size Calculator","item":"https://evsaves.com/car-mods/turbo-size-calculator/"}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="logo"><div class="logo-icon">⚡</div>EV <span>Saves</span></a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/uk/">🇬🇧 UK</a></li>
+        <li><a href="/au/">🇦🇺 Australia</a></li>
+        <li><a href="/us/">🇺🇸 US</a></li>
+        <li><a href="/calculators/">All Calculators</a></li>
+        <li><a href="/about/">About</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb"><a href="/">Home</a> <span>›</span> <a href="/car-mods/">Car Mod Calculators</a> <span>›</span> <span>Turbo Size Calculator</span></nav>
+        <h1>Turbo Size Calculator</h1>
+        <p>Calculate required airflow, pressure ratio, and estimated boost pressure for a target horsepower — a starting point for selecting the right turbocharger.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="ad-slot ad-leaderboard">AdSense 728x90 placeholder</div>
+        <div class="calc-intro">
+          <h2>How to Size a Turbocharger for Your Build</h2>
+          <p>Selecting the right turbocharger for a performance build is one of the most consequential decisions you'll make. A turbo that's too small will spool quickly but limit peak power and run out of efficiency at high RPM, generating excess heat. A turbo that's too large will produce outstanding peak power but suffer from turbo lag — sluggish response at low RPM where you spend most of your time on the road or track.</p>
+          <p><strong>The key parameters</strong>: Airflow (CFM — cubic feet per minute) and pressure ratio. These two numbers determine where on a turbo's compressor map you'll be operating. Every turbocharger manufacturer publishes compressor maps showing the efficiency islands across different pressure ratios and airflow rates. Staying within the 70–76% efficiency island produces minimal heat and maximum reliability.</p>
+          <p><strong>Pressure ratio</strong> is the ratio of absolute outlet pressure to absolute inlet pressure. At sea level, atmospheric pressure is 14.7 psi (1 bar). Running 14.7 psi of boost means a pressure ratio of 2:1 (14.7 + 14.7 = 29.4 total / 14.7 atmospheric). Higher pressure ratios require intercooling to manage charge air temperatures. Above a pressure ratio of 2.5:1 (approximately 22 psi boost), most intercoolers start struggling to maintain safe intake temperatures.</p>
+          <p><strong>Volumetric efficiency (VE)</strong> matters too. A healthy naturally aspirated engine with good port work and a performance camshaft might achieve 90–95% VE at peak. A stock engine in good condition typically runs 80–88% VE. Our calculator uses this as a scaling factor to account for how effectively your engine moves air at peak RPM.</p>
+          <p><strong>Important caveat</strong>: Turbo selection is a complex, multi-variable process that our simplified calculator cannot fully capture. Compressor map analysis, turbine sizing, housing A/R ratios, and boost controller selection all require detailed engineering input. Use our calculator as a rough starting point and consult a reputable turbo supplier (Garrett, BorgWarner, Precision, Borg, or a local specialist) with your engine specifications for a proper recommendation.</p>
+        </div>
+        <div id="calc-root"></div>
+        <div class="ad-slot ad-rectangle">AdSense 300x250 placeholder</div>
+        <div class="disclaimer-note">Simplified engineering estimate only. Turbocharger selection requires detailed compressor map analysis and should involve a qualified forced induction specialist. Do not base purchasing decisions solely on this calculator. See our <a href="/disclaimer/">Disclaimer</a>.</div>
+      </div>
+    </section>
+    <section class="section section-white">
+      <div class="container-narrow">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="card">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">What is the difference between a single turbo and a twin-scroll turbo? <span class="faq-icon">+</span></button>
+            <div class="faq-answer">A twin-scroll turbocharger separates the exhaust pulses from different cylinder pairs into two separate scrolls within the turbine housing. This maintains pulse energy that would otherwise cancel out in a single-scroll design. The result is better spool (earlier boost onset) and a wider torque band, typically with 10–15% more low-end response than an equivalent single-scroll design at the same peak power level.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">What boost pressure is safe on stock engine internals? <span class="faq-icon">+</span></button>
+            <div class="faq-answer">It depends heavily on the engine design and fuel octane. Modern turbocharged engines (VW/Audi EA888, Ford Ecoboost, BMW B58, Toyota GR) are typically safe to 6–8 psi above stock boost on premium fuel with a proper tune. Some are safe to 10–15 psi over stock. Older forged-piston engines (EJ Subaru, 4B11 Mitsubishi) can handle more. Cast pistons in high-compression engines are the limiting factor. A 93-octane tune is essential at elevated boost.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">Do I need an intercooler for my turbocharged car? <span class="faq-icon">+</span></button>
+            <div class="faq-answer">Most turbocharged cars already have an intercooler. If you're increasing boost significantly (more than 3–5 psi over stock), an upgraded intercooler is strongly recommended to reduce charge air temperature. Every 10°C reduction in charge air temperature allows the engine to run slightly more ignition advance or fuel enrichment, improving both power and reliability. Air-to-air front-mount intercoolers (FMICs) are the most common upgrade for high-boost builds.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">What is A/R ratio on a turbocharger? <span class="faq-icon">+</span></button>
+            <div class="faq-answer">A/R (area-to-radius) ratio describes the geometry of the turbine and compressor housings. A lower A/R turbine housing builds boost pressure faster (quicker spool) but limits maximum flow and peak power. A higher A/R flows more air at peak RPM for higher top-end power but takes longer to build boost. Street turbos typically run lower A/R for drivability; track/race turbos use higher A/R for peak power. Both compressor and turbine housings have A/R ratings — both matter for the overall powerband.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">How do I choose between a small snappy turbo and a big turbo? <span class="faq-icon">+</span></button>
+            <div class="faq-answer">It depends on your use case. For street driving and daily use, prioritise low-end response: choose a turbo that spools by 2,500–3,000 RPM and makes peak boost by 3,500–4,000 RPM. For track use or drag racing where you can hold RPM up, a larger turbo that makes more power at higher RPM is preferable. "Drive it like you stole it" street builds often benefit from a middle-ground turbo — decent spool with enough top-end to make the power figure worthwhile.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand"><a href="/" class="logo">⚡ EV <span>Saves</span></a><p>Real EV Running Costs. Real Savings. Car Mod Calculators.</p></div>
+        <div class="footer-col"><h4>Car Mod Calculators</h4><ul><li><a href="/car-mods/hp-gain-calculator/">HP Gain</a></li><li><a href="/car-mods/boost-pressure-calculator/">Boost Pressure</a></li><li><a href="/car-mods/">All Car Mods</a></li></ul></div>
+        <div class="footer-col"><h4>Site</h4><ul><li><a href="/about/">About</a></li><li><a href="/disclaimer/">Disclaimer</a></li><li><a href="/contact/">Contact</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 EV Saves. All rights reserved.</span><span>evsaves.com</span></div>
+    </div>
+  </footer>
+  <script type="module">
+    import { initNav, initFaq } from '/assets/js/utils.js';
+    import { initCalculator } from '/assets/js/calculators.js';
+    initNav(); initFaq();
+    initCalculator('turbo-size', 'us', {});
+  </script>
+</body>
+</html>

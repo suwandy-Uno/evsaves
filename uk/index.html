@@ -3,206 +3,327 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UK EV Calculators | EV Saves</title>
-  <meta name="description" content="Free UK EV running cost calculators. Compare electric vs petrol costs, calculate charging costs, and find your EV break-even point with real UK prices.">
+  <title>UK EV Calculators 2026 | EV Saves</title>
+  <meta name="description" content="Free UK EV running cost calculators. Real petrol and electricity prices. EV vs petrol, charging costs, BIK tax, salary sacrifice and more.">
   <link rel="canonical" href="https://evsaves.com/uk/">
-  <meta property="og:title" content="UK EV Calculators | EV Saves">
-  <meta property="og:description" content="Free UK EV running cost calculators with real UK electricity and petrol prices.">
+  <meta property="og:title" content="UK EV Calculators 2026 | EV Saves">
+  <meta property="og:description" content="Free UK EV running cost calculators. Real petrol and electricity prices. EV vs petrol, charging costs, BIK tax, salary sacrifice and more.">
   <meta property="og:url" content="https://evsaves.com/uk/">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="EV Saves">
   <link rel="stylesheet" href="/assets/css/style.css">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://evsaves.com/"},
-      {"@type": "ListItem", "position": 2, "name": "UK Calculators", "item": "https://evsaves.com/uk/"}
-    ]
-  }
-  </script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="header-inner">
-      <a href="/" class="logo">
-        <div class="logo-icon">⚡</div>
-        EV <span>Saves</span>
-      </a>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="/">Home</a></li>
-        <li><a href="/uk/" class="active">UK Calculators</a></li>
-        <li><a href="/about/">About</a></li>
-        <li><a href="/contact/">Contact</a></li>
-      </ul>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="logo"><div class="logo-icon">⚡</div>EV <span>Saves</span></a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/uk/" class="active">🇬🇧 UK</a></li>
+      <li><a href="/au/">🇦🇺 Australia</a></li>
+      <li><a href="/us/">🇺🇸 US</a></li>
+      <li><a href="/calculators/">All Calculators</a></li>
+      <li><a href="/about/">About</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a>
+        <span class="breadcrumb-sep">›</span>
+        <span>UK Calculators</span>
+      </nav>
+      <div class="page-hero-flag">🇬🇧</div>
+      <h1>UK EV Calculators 2026</h1>
+      <p class="page-hero-sub">Free, data-driven EV running cost calculators built for UK drivers. Real Ofgem electricity prices. Real RAC pump prices. Honest numbers.</p>
     </div>
-  </header>
+  </section>
 
-  <main>
-    <section class="page-hero">
-      <div class="container">
-        <nav class="breadcrumb">
-          <a href="/">Home</a> <span>›</span> <span>UK Calculators</span>
-        </nav>
-        <div class="flag-badge">🇬🇧 United Kingdom</div>
-        <h1>UK EV Running Cost Calculators</h1>
-        <p>Built around real UK petrol prices, Ofgem electricity rates, and DVLA road tax figures. Updated regularly.</p>
+  <!-- Stats Bar -->
+  <section class="stats-bar">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <span class="stat-value">134p/litre</span>
+        <span class="stat-label">Avg petrol price</span>
       </div>
-    </section>
-
-    <div class="stats-bar">
-      <div class="stats-inner">
-        <div class="stat-item">
-          <div class="stat-value">134p</div>
-          <div class="stat-label">Avg petrol price per litre</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-value">24.5p</div>
-          <div class="stat-label">Avg home electricity per kWh</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-value">£190</div>
-          <div class="stat-label">Annual road tax saving (EV)</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-value">£200</div>
-          <div class="stat-label">Avg annual servicing saving</div>
-        </div>
+      <div class="stat-item">
+        <span class="stat-value">24.5p/kWh</span>
+        <span class="stat-label">Home electricity</span>
       </div>
-    </div>
-
-    <section class="section">
-      <div class="container">
-        <div class="ad-slot ad-leaderboard">AdSense Placeholder</div>
-
-        <h2 class="section-title" style="margin-top:1rem;">Available Calculators</h2>
-        <p class="section-sub">All prices last updated: <strong>1 June 2026</strong></p>
-
-        <div class="card-grid">
-          <a href="/uk/ev-vs-petrol-calculator/" class="calc-card">
-            <h3>⚡ EV vs Petrol Cost Calculator</h3>
-            <p>Compare the true annual running cost of an electric vehicle against your current petrol car. Includes fuel, road tax, servicing, and insurance differences.</p>
-            <span class="arrow">Try the calculator →</span>
-          </a>
-
-          <div class="calc-card" style="opacity: 0.55; cursor: default; pointer-events: none;">
-            <h3>🔌 EV Charging Cost Calculator</h3>
-            <p>Calculate exactly how much it costs to charge your EV at home vs public chargers, and optimise your charging strategy.</p>
-            <span class="arrow" style="color: var(--gray-600);">Coming soon</span>
-          </div>
-
-          <div class="calc-card" style="opacity: 0.55; cursor: default; pointer-events: none;">
-            <h3>🚗 Tesla Model 3 Running Costs UK</h3>
-            <p>Full annual running cost breakdown for the Tesla Model 3 Long Range and Standard Range in the UK.</p>
-            <span class="arrow" style="color: var(--gray-600);">Coming soon</span>
-          </div>
-
-          <div class="calc-card" style="opacity: 0.55; cursor: default; pointer-events: none;">
-            <h3>🚙 Tesla Model Y Running Costs UK</h3>
-            <p>Full annual running cost breakdown for the Tesla Model Y in the UK, including real-world efficiency data.</p>
-            <span class="arrow" style="color: var(--gray-600);">Coming soon</span>
-          </div>
-
-          <div class="calc-card" style="opacity: 0.55; cursor: default; pointer-events: none;">
-            <h3>🚘 BYD Atto 3 Running Costs UK</h3>
-            <p>Full annual running cost breakdown for the BYD Atto 3 in the UK — one of the best-value EVs on sale.</p>
-            <span class="arrow" style="color: var(--gray-600);">Coming soon</span>
-          </div>
-        </div>
-
-        <div class="disclaimer-note" style="margin-top: 2rem;">
-          <strong>Prices last updated 1 June 2026.</strong> UK petrol price: 134p/litre (RAC Fuel Watch). Home electricity: 24.5p/kWh (Ofgem price cap). Figures are estimates — see our <a href="/disclaimer/">Disclaimer</a>.
-        </div>
+      <div class="stat-item">
+        <span class="stat-value">£190/yr</span>
+        <span class="stat-label">Road tax saving</span>
       </div>
-    </section>
-
-    <section class="section" style="background: var(--white);">
-      <div class="container" style="max-width: 760px;">
-        <h2 class="section-title">UK EV FAQ</h2>
-        <div class="card">
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              How much can I save switching to electric in the UK?
-              <span class="faq-icon">+</span>
-            </button>
-            <div class="faq-answer">
-              Most UK drivers save £800–£1,500 per year on fuel alone. Including road tax (£190) and servicing savings (£150–£300), total annual savings typically reach £1,100–£2,000 for average mileage drivers.
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              What is the average electricity cost for charging an EV at home in the UK?
-              <span class="faq-icon">+</span>
-            </button>
-            <div class="faq-answer">
-              Under the current Ofgem price cap (June 2026), the average unit rate is 24.5p/kWh. EV-specific overnight tariffs like Octopus Go can cut this to 7–9p/kWh, significantly improving savings.
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              Do EVs pay road tax in the UK?
-              <span class="faq-icon">+</span>
-            </button>
-            <div class="faq-answer">
-              From April 2025, EVs registered on or after 1 April 2025 pay standard Vehicle Excise Duty (VED). However, older EVs and many current models still benefit from lower rates. The saving versus an average petrol car is around £190/year.
-            </div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-              How long does it take to break even buying an electric car in the UK?
-              <span class="faq-icon">+</span>
-            </button>
-            <div class="faq-answer">
-              With a typical EV premium of £6,000–£10,000 and annual savings of £1,200–£1,800, most drivers break even in 4–7 years. Higher mileage and cheap overnight charging significantly shorten this. Use our <a href="/uk/ev-vs-petrol-calculator/">EV vs Petrol Calculator</a> for a personalised figure.
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="container" style="padding-bottom:2rem;">
-      <div class="ad-slot ad-rectangle">AdSense Placeholder</div>
-    </div>
-  </main>
-
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <a href="/" class="logo">⚡ EV <span>Saves</span></a>
-          <p>Real EV Running Costs. Real Savings.</p>
-        </div>
-        <nav class="footer-links">
-          <a href="/about/">About</a>
-          <a href="/privacy-policy/">Privacy Policy</a>
-          <a href="/disclaimer/">Disclaimer</a>
-          <a href="/contact/">Contact</a>
-        </nav>
-      </div>
-      <div class="footer-bottom">
-        <span>© 2026 EV Saves. All rights reserved.</span>
-        <span>evsaves.com</span>
+      <div class="stat-item">
+        <span class="stat-value">£200/yr</span>
+        <span class="stat-label">Avg servicing saving</span>
       </div>
     </div>
-  </footer>
+  </section>
 
-  <script>
-    const toggle = document.getElementById('nav-toggle');
-    const navLinks = document.getElementById('nav-links');
-    toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+  <!-- Ad Leaderboard -->
+  <div class="ad-leaderboard">
+    <div class="container">
+      <div class="ad-placeholder">Advertisement</div>
+    </div>
+  </div>
 
-    document.querySelectorAll('.faq-question').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const answer = btn.nextElementSibling;
-        const isOpen = answer.classList.contains('open');
-        document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
-        document.querySelectorAll('.faq-question').forEach(b => b.setAttribute('aria-expanded', 'false'));
-        if (!isOpen) { answer.classList.add('open'); btn.setAttribute('aria-expanded', 'true'); }
-      });
-    });
-  </script>
+  <!-- UK Calculators -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">UK EV Calculators</h2>
+      <div class="card-grid card-grid-3">
+
+        <a href="/uk/ev-vs-petrol-calculator/" class="calc-card">
+          <div class="calc-card-flag">🇬🇧</div>
+          <h3>EV vs Petrol Calculator</h3>
+          <p>Compare real UK running costs: EV home charging vs petrol at the pump.</p>
+          <span class="calc-card-cta">Calculate →</span>
+        </a>
+
+        <a href="/uk/ev-charging-calculator/" class="calc-card">
+          <div class="calc-card-flag">🇬🇧</div>
+          <h3>EV Charging Cost Calculator</h3>
+          <p>Find out how much it costs to fully charge your EV at home or on a public charger.</p>
+          <span class="calc-card-cta">Calculate →</span>
+        </a>
+
+        <a href="/uk/ev-running-calculator/" class="calc-card">
+          <div class="calc-card-flag">🇬🇧</div>
+          <h3>EV Running Cost Calculator</h3>
+          <p>Calculate total annual running costs including energy, servicing, tyres and insurance.</p>
+          <span class="calc-card-cta">Calculate →</span>
+        </a>
+
+        <a href="/uk/ev-tco-calculator/" class="calc-card">
+          <div class="calc-card-flag">🇬🇧</div>
+          <h3>EV Total Cost of Ownership</h3>
+          <p>Full 5-year TCO comparison: EV vs petrol, including depreciation and financing.</p>
+          <span class="calc-card-cta">Calculate →</span>
+        </a>
+
+        <a href="/uk/tesla-model-3-calculator/" class="calc-card">
+          <div class="calc-card-flag">🇬🇧</div>
+          <h3>Tesla Model 3 Running Costs</h3>
+          <p>UK-specific running cost breakdown for the Tesla Model 3 Long Range and Standard Range.</p>
+          <span class="calc-card-cta">Calculate →</span>
+        </a>
+
+        <a href="/uk/tesla-model-y-calculator/" class="calc-card">
+          <div class="calc-card-flag">🇬🇧</div>
+          <h3>Tesla Model Y Running Costs</h3>
+          <p>UK running cost calculator for the Tesla Model Y — the UK's best-selling EV.</p>
+          <span class="calc-card-cta">Calculate →</span>
+        </a>
+
+        <a href="/uk/byd-atto-3-calculator/" class="calc-card">
+          <div class="calc-card-flag">🇬🇧</div>
+          <h3>BYD Atto 3 Running Costs</h3>
+          <p>Full UK running cost breakdown for the BYD Atto 3 electric SUV.</p>
+          <span class="calc-card-cta">Calculate →</span>
+        </a>
+
+        <a href="/uk/byd-seal-calculator/" class="calc-card">
+          <div class="calc-card-flag">🇬🇧</div>
+          <h3>BYD Seal Running Costs</h3>
+          <p>UK running costs for the BYD Seal — a direct Tesla Model 3 rival.</p>
+          <span class="calc-card-cta">Calculate →</span>
+        </a>
+
+        <a href="/uk/mg4-calculator/" class="calc-card">
+          <div class="calc-card-flag">🇬🇧</div>
+          <h3>MG4 Running Costs</h3>
+          <p>How much does the MG4 really cost to run in the UK? Find out here.</p>
+          <span class="calc-card-cta">Calculate →</span>
+        </a>
+
+        <a href="/uk/nissan-leaf-calculator/" class="calc-card">
+          <div class="calc-card-flag">🇬🇧</div>
+          <h3>Nissan Leaf Running Costs</h3>
+          <p>UK running costs for the Nissan Leaf — the original mass-market EV.</p>
+          <span class="calc-card-cta">Calculate →</span>
+        </a>
+
+        <a href="/uk/ev-vs-hybrid-calculator/" class="calc-card">
+          <div class="calc-card-flag">🇬🇧</div>
+          <h3>EV vs Hybrid Calculator</h3>
+          <p>Is a full EV or a hybrid cheaper to run in the UK? Compare real costs.</p>
+          <span class="calc-card-cta">Calculate →</span>
+        </a>
+
+        <a href="/uk/solar-ev-charging-calculator/" class="calc-card">
+          <div class="calc-card-flag">🇬🇧</div>
+          <h3>Solar EV Charging Calculator</h3>
+          <p>See how much you save charging your EV from rooftop solar panels in the UK.</p>
+          <span class="calc-card-cta">Calculate →</span>
+        </a>
+
+        <a href="/uk/ev-road-tax-savings-calculator/" class="calc-card">
+          <div class="calc-card-flag">🇬🇧</div>
+          <h3>EV Road Tax Savings</h3>
+          <p>Calculate your road tax saving switching to an EV under UK 2026 VED rules.</p>
+          <span class="calc-card-cta">Calculate →</span>
+        </a>
+
+        <a href="/uk/company-car-bik-calculator/" class="calc-card">
+          <div class="calc-card-flag">🇬🇧</div>
+          <h3>Company Car BIK Calculator</h3>
+          <p>Benefit-in-Kind tax calculator for EV company cars at UK 2026 rates.</p>
+          <span class="calc-card-cta">Calculate →</span>
+        </a>
+
+        <a href="/uk/ev-salary-sacrifice-calculator/" class="calc-card">
+          <div class="calc-card-flag">🇬🇧</div>
+          <h3>EV Salary Sacrifice Calculator</h3>
+          <p>How much do you save getting an EV through your employer's salary sacrifice scheme?</p>
+          <span class="calc-card-cta">Calculate →</span>
+        </a>
+
+        <a href="/uk/ev-fleet-cost-calculator/" class="calc-card">
+          <div class="calc-card-flag">🇬🇧</div>
+          <h3>EV Fleet Cost Calculator</h3>
+          <p>Calculate the total cost of transitioning part or all of your UK fleet to electric.</p>
+          <span class="calc-card-cta">Calculate →</span>
+        </a>
+
+        <a href="/uk/used-ev-value-calculator/" class="calc-card">
+          <div class="calc-card-flag">🇬🇧</div>
+          <h3>Used EV Value Calculator</h3>
+          <p>Estimate the current market value and depreciation of a used EV in the UK.</p>
+          <span class="calc-card-cta">Calculate →</span>
+        </a>
+
+        <a href="/uk/ev-insurance-cost-estimator/" class="calc-card">
+          <div class="calc-card-flag">🇬🇧</div>
+          <h3>EV Insurance Cost Estimator</h3>
+          <p>Estimate how much more (or less) EV insurance costs compared to an equivalent petrol car.</p>
+          <span class="calc-card-cta">Calculate →</span>
+        </a>
+
+        <a href="/uk/home-charger-installation-calculator/" class="calc-card">
+          <div class="calc-card-flag">🇬🇧</div>
+          <h3>Home Charger Installation Cost</h3>
+          <p>Estimate home EV charger installation costs in the UK and calculate payback period.</p>
+          <span class="calc-card-cta">Calculate →</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- UK FAQ -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">UK EV Frequently Asked Questions</h2>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            How much does it cost to charge an EV at home in the UK?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>At the 2026 Ofgem price cap rate of approximately 24.5p/kWh, a full charge of a 75kWh battery (e.g. Tesla Model Y Long Range) costs around £18.40. For the average UK driver covering 9,000 miles per year in an EV with a real-world efficiency of about 3.5 miles/kWh, annual home charging costs work out to roughly £630–£680. Use our <a href="/uk/ev-charging-calculator/">EV Charging Cost Calculator</a> to get a precise figure for your car.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            How much can I save on fuel by switching to an EV in the UK?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>At current UK prices (134p/litre petrol, 24.5p/kWh home electricity), a driver covering 9,000 miles per year in a 40mpg petrol car spends around £1,360 on fuel. The equivalent EV costs around £650 per year on home electricity — a saving of approximately £710. Higher mileage drivers save proportionally more. Enter your own mileage and current fuel costs in our <a href="/uk/ev-vs-petrol-calculator/">EV vs Petrol Calculator</a> for an accurate figure.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Do EVs pay road tax (VED) in the UK in 2026?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes — from April 2025, EVs registered on or after 1 April 2025 are no longer exempt from Vehicle Excise Duty (VED). New EVs now pay the standard first-year rate and then the flat rate from year two, currently £195/yr. However, EVs still avoid the expensive first-year rates that petrol and diesel cars over 255g/km CO2 pay (up to £2,745), and they are exempt from the premium car supplement on cars under £40,000 MSRP. Use our <a href="/uk/ev-road-tax-savings-calculator/">Road Tax Savings Calculator</a> to see your specific situation.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What is the EV BIK tax rate for UK company car drivers in 2026?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>The Benefit-in-Kind (BIK) rate for fully electric company cars in 2026/27 is 3% of the car's P11D value. This is dramatically lower than petrol or diesel company cars, which attract BIK rates of 20–37% depending on CO2 emissions. A higher-rate taxpayer with a £45,000 EV company car pays approximately £540/year in BIK tax, versus £4,000–£6,600 for an equivalent petrol car. Use our <a href="/uk/company-car-bik-calculator/">Company Car BIK Calculator</a> for your specific figures.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Is salary sacrifice the cheapest way to get an EV in the UK?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>For most employees with access to a salary sacrifice scheme, yes — it is currently one of the cheapest ways to drive a new EV in the UK. Payments come from pre-tax and pre-NI salary, the employer's NI saving is often passed back to the employee, and the 3% BIK rate means the tax cost is minimal. A basic-rate taxpayer can effectively get a new EV for 30–40% less than the headline lease price. Use our <a href="/uk/ev-salary-sacrifice-calculator/">Salary Sacrifice Calculator</a> to see your saving.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Ad Rectangle -->
+  <div class="ad-rectangle">
+    <div class="container">
+      <div class="ad-placeholder">Advertisement</div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="/" class="logo">⚡ EV <span>Saves</span></a>
+        <p>Real EV Running Costs. Real Savings. Free calculators for UK, Australia and US drivers.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Calculators</h4>
+        <ul>
+          <li><a href="/uk/ev-vs-petrol-calculator/">EV vs Petrol UK</a></li>
+          <li><a href="/au/ev-vs-petrol-calculator/">EV vs Petrol AU</a></li>
+          <li><a href="/us/ev-vs-gas-calculator/">EV vs Gas US</a></li>
+          <li><a href="/calculators/">All Calculators</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <ul>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/privacy-policy/">Privacy Policy</a></li>
+          <li><a href="/disclaimer/">Disclaimer</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 EV Saves. All rights reserved.</span>
+      <span>evsaves.com — Real EV Running Costs. Real Savings.</span>
+    </div>
+  </div>
+</footer>
+
+<script type="module">
+  import { initNav, initFaq } from '/assets/js/utils.js';
+  initNav();
+  initFaq();
+</script>
+
 </body>
 </html>

@@ -4,156 +4,298 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact EV Saves | Get in Touch</title>
-  <meta name="description" content="Contact the EV Saves team — report an error, suggest a calculator, or ask a question about EV running costs.">
+  <meta name="description" content="Contact the EV Saves team — report a data error, suggest a calculator, or ask a question about EV running costs in the UK, Australia or US.">
   <link rel="canonical" href="https://evsaves.com/contact/">
   <meta property="og:title" content="Contact EV Saves | Get in Touch">
+  <meta property="og:description" content="Contact the EV Saves team — report a data error, suggest a calculator, or ask a question about EV running costs in the UK, Australia or US.">
   <meta property="og:url" content="https://evsaves.com/contact/">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="EV Saves">
   <link rel="stylesheet" href="/assets/css/style.css">
-</head>
-<body>
-  <header class="site-header">
-    <div class="header-inner">
-      <a href="/" class="logo">
-        <div class="logo-icon">⚡</div>
-        EV <span>Saves</span>
-      </a>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="/">Home</a></li>
-        <li><a href="/uk/">UK Calculators</a></li>
-        <li><a href="/about/">About</a></li>
-        <li><a href="/contact/" class="active">Contact</a></li>
-      </ul>
-    </div>
-  </header>
-
-  <main>
-    <section class="page-hero">
-      <div class="container">
-        <nav class="breadcrumb">
-          <a href="/">Home</a> <span>›</span> <span>Contact</span>
-        </nav>
-        <h1>Contact Us</h1>
-        <p>Questions, errors, suggestions — we'd love to hear from you.</p>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: start; max-width: 900px;">
-          <div>
-            <h2 class="section-title">Get in Touch</h2>
-            <p style="color: var(--gray-600); margin-bottom: 1.5rem;">We typically respond within 1–2 business days.</p>
-
-            <form class="contact-form" id="contact-form" novalidate>
-              <div class="form-group">
-                <label for="name">Your Name *</label>
-                <input type="text" id="name" name="name" required placeholder="Jane Smith" autocomplete="name">
-              </div>
-              <div class="form-group">
-                <label for="email">Email Address *</label>
-                <input type="email" id="email" name="email" required placeholder="jane@example.com" autocomplete="email">
-              </div>
-              <div class="form-group">
-                <label for="subject">Subject</label>
-                <select id="subject" name="subject">
-                  <option value="">Select a topic...</option>
-                  <option value="error">Report a data error</option>
-                  <option value="calculator">Suggest a calculator</option>
-                  <option value="advertising">Advertising enquiry</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="message">Message *</label>
-                <textarea id="message" name="message" required placeholder="Tell us what's on your mind..."></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary" style="width:100%; padding: 0.9rem;">Send Message</button>
-            </form>
-
-            <div class="form-success" id="form-success">
-              ✅ Thank you for your message! We'll get back to you within 1–2 business days.
-            </div>
-          </div>
-
-          <div>
-            <div class="card" style="margin-bottom: 1.25rem;">
-              <h3 style="color: var(--primary); font-weight: 700; margin-bottom: 0.75rem;">📊 Report a Data Error</h3>
-              <p style="font-size: 0.9rem; color: var(--gray-600);">If you believe any of our prices or calculations are incorrect, please let us know. Include which calculator, what you expected, and your source if possible. We update data promptly.</p>
-            </div>
-            <div class="card" style="margin-bottom: 1.25rem;">
-              <h3 style="color: var(--primary); font-weight: 700; margin-bottom: 0.75rem;">🔢 Suggest a Calculator</h3>
-              <p style="font-size: 0.9rem; color: var(--gray-600);">Have a specific EV or comparison in mind? We're building out the UK calculator library. Suggest a vehicle or calculation type and we'll prioritise based on demand.</p>
-            </div>
-            <div class="card">
-              <h3 style="color: var(--primary); font-weight: 700; margin-bottom: 0.75rem;">📢 Advertising</h3>
-              <p style="font-size: 0.9rem; color: var(--gray-600);">Interested in reaching UK EV drivers and buyers? Get in touch to discuss advertising and sponsorship opportunities.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <a href="/" class="logo">⚡ EV <span>Saves</span></a>
-          <p>Real EV Running Costs. Real Savings.</p>
-        </div>
-        <nav class="footer-links">
-          <a href="/about/">About</a>
-          <a href="/privacy-policy/">Privacy Policy</a>
-          <a href="/disclaimer/">Disclaimer</a>
-          <a href="/contact/">Contact</a>
-        </nav>
-      </div>
-      <div class="footer-bottom">
-        <span>© 2026 EV Saves. All rights reserved.</span>
-        <span>evsaves.com</span>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    const toggle = document.getElementById('nav-toggle');
-    const navLinks = document.getElementById('nav-links');
-    toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
-
-    document.getElementById('contact-form').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const name    = document.getElementById('name').value.trim();
-      const email   = document.getElementById('email').value.trim();
-      const message = document.getElementById('message').value.trim();
-
-      if (!name || !email || !message) {
-        alert('Please fill in all required fields.');
-        return;
-      }
-      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        alert('Please enter a valid email address.');
-        return;
-      }
-
-      this.style.display = 'none';
-      document.getElementById('form-success').style.display = 'block';
-    });
-
-    // Responsive contact layout
-    function fixLayout() {
-      const grid = document.querySelector('.contact-form').closest('div').parentElement;
-      if (window.innerWidth < 700) {
-        grid.style.gridTemplateColumns = '1fr';
-      } else {
-        grid.style.gridTemplateColumns = '1fr 1fr';
+  <style>
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 2.5rem;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    @media (max-width: 700px) {
+      .contact-layout {
+        grid-template-columns: 1fr;
       }
     }
-    fixLayout();
-    window.addEventListener('resize', fixLayout);
-  </script>
+    .contact-form-wrap h2 {
+      margin-top: 0;
+    }
+    .form-group {
+      margin-bottom: 1.25rem;
+    }
+    .form-group label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+      font-size: 0.95rem;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.65rem 0.9rem;
+      border: 1.5px solid #d1d5db;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-family: inherit;
+      background: #fff;
+      color: #1a1a2e;
+      transition: border-color 0.2s;
+      box-sizing: border-box;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: #1a5f3c;
+    }
+    .form-group textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+    .form-error {
+      color: #c0392b;
+      font-size: 0.88rem;
+      margin-top: 0.25rem;
+      display: none;
+    }
+    .form-error.visible {
+      display: block;
+    }
+    .form-success {
+      display: none;
+      background: #e8f5e9;
+      border: 1.5px solid #00c851;
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      color: #1a5f3c;
+      font-weight: 600;
+      margin-top: 1rem;
+    }
+    .form-success.visible {
+      display: block;
+    }
+    .contact-info-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+    .info-card {
+      background: #fff;
+      border: 1.5px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 1.25rem 1.5rem;
+    }
+    .info-card-icon {
+      font-size: 1.75rem;
+      margin-bottom: 0.5rem;
+    }
+    .info-card h3 {
+      margin: 0 0 0.4rem;
+      font-size: 1rem;
+      color: #1a5f3c;
+    }
+    .info-card p {
+      margin: 0;
+      font-size: 0.93rem;
+      color: #4b5563;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="logo"><div class="logo-icon">⚡</div>EV <span>Saves</span></a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/uk/">🇬🇧 UK</a></li>
+      <li><a href="/au/">🇦🇺 Australia</a></li>
+      <li><a href="/us/">🇺🇸 US</a></li>
+      <li><a href="/calculators/">All Calculators</a></li>
+      <li><a href="/about/">About</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a>
+        <span class="breadcrumb-sep">›</span>
+        <span>Contact</span>
+      </nav>
+      <h1>Contact EV Saves</h1>
+      <p class="page-hero-sub">Report a data error, suggest a calculator, or just say hello.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-layout">
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrap">
+          <h2>Send Us a Message</h2>
+          <p style="margin-top:0;color:#4b5563;">We aim to reply within two business days. All fields marked * are required.</p>
+
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="contact-name">Name *</label>
+              <input type="text" id="contact-name" name="name" placeholder="Your name" autocomplete="name">
+              <div class="form-error" id="err-name">Please enter your name.</div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email">Email address *</label>
+              <input type="email" id="contact-email" name="email" placeholder="you@example.com" autocomplete="email">
+              <div class="form-error" id="err-email">Please enter a valid email address.</div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-subject">Subject *</label>
+              <select id="contact-subject" name="subject">
+                <option value="">— Select a subject —</option>
+                <option value="data-error">Report a data error</option>
+                <option value="suggest-calc">Suggest a calculator</option>
+                <option value="advertising">Advertising enquiry</option>
+                <option value="general">General question</option>
+                <option value="other">Other</option>
+              </select>
+              <div class="form-error" id="err-subject">Please select a subject.</div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message">Message *</label>
+              <textarea id="contact-message" name="message" placeholder="Tell us what's on your mind…"></textarea>
+              <div class="form-error" id="err-message">Please enter a message (at least 10 characters).</div>
+            </div>
+
+            <button type="submit" class="btn btn-accent">Send Message →</button>
+
+            <div class="form-success" id="form-success">
+              ✅ Thanks for your message! We'll be in touch within two business days.
+            </div>
+          </form>
+        </div>
+
+        <!-- Info Cards -->
+        <div class="contact-info-cards">
+
+          <div class="info-card">
+            <div class="info-card-icon">🔍</div>
+            <h3>Report a Data Error</h3>
+            <p>Spotted an outdated price, wrong efficiency figure, or calculation mistake? Tell us which page and what looks wrong. We'll review and update it within 48 hours.</p>
+          </div>
+
+          <div class="info-card">
+            <div class="info-card-icon">💡</div>
+            <h3>Suggest a Calculator</h3>
+            <p>Have an EV cost question we don't cover yet? We're always looking to expand. Let us know what you'd find useful and we'll consider it for our next build.</p>
+          </div>
+
+          <div class="info-card">
+            <div class="info-card-icon">📢</div>
+            <h3>Advertising</h3>
+            <p>We accept display advertising and relevant affiliate partnerships. EV products, energy tariffs and motoring services are a good fit. Reach out to discuss rates and placement.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="/" class="logo">⚡ EV <span>Saves</span></a>
+        <p>Real EV Running Costs. Real Savings. Free calculators for UK, Australia and US drivers.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Calculators</h4>
+        <ul>
+          <li><a href="/uk/ev-vs-petrol-calculator/">EV vs Petrol UK</a></li>
+          <li><a href="/au/ev-vs-petrol-calculator/">EV vs Petrol AU</a></li>
+          <li><a href="/us/ev-vs-gas-calculator/">EV vs Gas US</a></li>
+          <li><a href="/calculators/">All Calculators</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <ul>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/privacy-policy/">Privacy Policy</a></li>
+          <li><a href="/disclaimer/">Disclaimer</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 EV Saves. All rights reserved.</span>
+      <span>evsaves.com — Real EV Running Costs. Real Savings.</span>
+    </div>
+  </div>
+</footer>
+
+<script type="module">
+  import { initNav, initFaq } from '/assets/js/utils.js';
+  initNav();
+  initFaq();
+</script>
+
+<script>
+  (function () {
+    var form = document.getElementById('contact-form');
+    var success = document.getElementById('form-success');
+
+    function showErr(id, show) {
+      var el = document.getElementById(id);
+      if (show) el.classList.add('visible');
+      else el.classList.remove('visible');
+    }
+
+    function validateEmail(v) {
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
+    }
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var name = document.getElementById('contact-name').value.trim();
+      var email = document.getElementById('contact-email').value.trim();
+      var subject = document.getElementById('contact-subject').value;
+      var message = document.getElementById('contact-message').value.trim();
+
+      var valid = true;
+
+      if (!name) { showErr('err-name', true); valid = false; } else { showErr('err-name', false); }
+      if (!validateEmail(email)) { showErr('err-email', true); valid = false; } else { showErr('err-email', false); }
+      if (!subject) { showErr('err-subject', true); valid = false; } else { showErr('err-subject', false); }
+      if (message.length < 10) { showErr('err-message', true); valid = false; } else { showErr('err-message', false); }
+
+      if (valid) {
+        // In production, submit to your backend / Formspree / Netlify Forms here
+        form.style.display = 'none';
+        success.classList.add('visible');
+      }
+    });
+  })();
+</script>
+
 </body>
 </html>

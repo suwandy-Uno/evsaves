@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>0-60 mph Time Calculator | Car Performance | EV Saves</title>
+  <meta name="description" content="Estimate 0-60 mph time based on vehicle weight and horsepower. See how modifications and power-to-weight ratio affect your sprint time.">
+  <link rel="canonical" href="https://evsaves.com/car-mods/zero-to-sixty-calculator/">
+  <meta property="og:title" content="0-60 mph Time Calculator | Car Performance | EV Saves">
+  <meta property="og:url" content="https://evsaves.com/car-mods/zero-to-sixty-calculator/">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://evsaves.com/"},{"@type":"ListItem","position":2,"name":"Car Mod Calculators","item":"https://evsaves.com/car-mods/"},{"@type":"ListItem","position":3,"name":"0-60 Calculator","item":"https://evsaves.com/car-mods/zero-to-sixty-calculator/"}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="logo"><div class="logo-icon">⚡</div>EV <span>Saves</span></a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/uk/">🇬🇧 UK</a></li>
+        <li><a href="/au/">🇦🇺 Australia</a></li>
+        <li><a href="/us/">🇺🇸 US</a></li>
+        <li><a href="/calculators/">All Calculators</a></li>
+        <li><a href="/about/">About</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb"><a href="/">Home</a> <span>›</span> <a href="/car-mods/">Car Mod Calculators</a> <span>›</span> <span>0-60 Calculator</span></nav>
+        <h1>0-60 mph Time Calculator</h1>
+        <p>Estimate your car's 0-60 mph time based on power-to-weight ratio — and see how modifications and weight reduction improve your sprint.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="ad-slot ad-leaderboard">AdSense 728x90 placeholder</div>
+        <div class="calc-intro">
+          <h2>What Actually Determines Your 0-60 Time?</h2>
+          <p>The 0-60 mph time is the most widely quoted performance metric for road cars, and power-to-weight ratio is the primary determinant. However, it is not the only factor — traction, launch technique, aerodynamic drag, and gearing all play important roles, particularly at the extremes.</p>
+          <p><strong>Power-to-weight ratio</strong> is the single most useful metric. Dividing horsepower by weight in tonnes gives you a number that allows meaningful comparison between very different vehicles. A figure above 200 hp/tonne produces genuinely fast cars (sub-5 second 0-60). Above 400 hp/tonne, traction becomes the limiting factor for most road cars.</p>
+          <p><strong>Traction limits</strong>: Below around 200 hp on most road tyres, wheelspin is manageable and the formula gives reasonable estimates. Above 300 hp on a rear-wheel drive car with standard tyres, wheelspin becomes the performance limiter — the actual 0-60 time will be slower than the formula predicts unless you have sticky tyres, launch control, or AWD. AWD cars typically post 0-60 times 0.3–0.8 seconds faster than equivalent RWD cars due to better power delivery.</p>
+          <p><strong>EVs have a major advantage</strong>: Unlike combustion engines that build torque across an RPM range, electric motors deliver peak torque from zero RPM. Combined with single-speed gearboxes (no gear change delays) and increasingly sophisticated AWD systems with torque vectoring, EVs routinely post 0-60 times that would have required supercars 10 years ago. A Tesla Model 3 Performance at 3,900 lbs and 450 hp produces a 3.1 second 0-60 — consistent with our formula's prediction for those numbers under ideal traction conditions.</p>
+          <p>Our calculator uses an empirical formula based on power-to-weight ratio with a drivetrain correction factor. Results are reasonable approximations for planning purposes — for accurate figures, test on a track with GPS timing equipment or refer to published test results.</p>
+        </div>
+        <div id="calc-root"></div>
+        <div class="ad-slot ad-rectangle">AdSense 300x250 placeholder</div>
+        <div class="disclaimer-note">Mathematical approximation only. Actual 0-60 times are affected by traction, launch technique, gearing, ambient temperature, road surface and driver skill. See our <a href="/disclaimer/">Disclaimer</a>.</div>
+      </div>
+    </section>
+    <section class="section section-white">
+      <div class="container-narrow">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="card">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">What power-to-weight ratio do I need for a sub-5 second 0-60? <span class="faq-icon">+</span></button>
+            <div class="faq-answer">Generally, a power-to-weight ratio of 200–250 hp/tonne is needed for a sub-5 second 0-60 in a well-traction car. AWD vehicles achieve this more easily than RWD. A 3,000 lb (1,360kg) car needs around 270–340 hp to crack 5 seconds. EVs with instant torque often perform better than the formula predicts — the Model 3 Performance at ~200 hp/tonne hits 3.1 seconds due to AWD traction and instant motor response.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">How does AWD vs RWD affect 0-60 time? <span class="faq-icon">+</span></button>
+            <div class="faq-answer">AWD typically improves 0-60 time by 0.3–0.8 seconds versus equivalent RWD, due to better power distribution and traction. This advantage is most significant at high power levels where RWD tyres struggle to find traction. At moderate power levels (under 200 hp), the difference is smaller. Our calculator includes a drivetrain factor to approximate this — select AWD for a more accurate estimate.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">Why are EV 0-60 times so much faster than equivalent HP petrol cars? <span class="faq-icon">+</span></button>
+            <div class="faq-answer">Electric motors produce peak torque instantly from 0 RPM, while combustion engines build torque across an RPM band and require gear changes to maintain power. An EV with AWD can perfectly modulate torque to each wheel for optimal launch, while a petrol car fights wheelspin. A 400 hp EV in the right conditions can outrun a 600 hp petrol car to 60 mph due to launch efficiency.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">How does weight reduction affect 0-60 time? <span class="faq-icon">+</span></button>
+            <div class="faq-answer">Every 100 lbs (45kg) removed from a 3,200 lb car improves power-to-weight ratio by about 3.1%. On a car doing 6 seconds 0-60, that 3% improvement translates to roughly 0.18 seconds. Weight reduction is most effective when the car is traction-limited (removing weight helps), but for most road cars in the 200-350 hp range, adding power is more cost-effective than removing weight for 0-60 improvement.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">What is the fastest production 0-60 time ever recorded? <span class="faq-icon">+</span></button>
+            <div class="faq-answer">The fastest production car 0-60 times are around 1.7–2.0 seconds, achieved by hypercars with extreme power-to-weight ratios. The Bugatti Chiron Super Sport (1,578 hp), Tesla Roadster (2023, 1,000+ hp), and Rimac Nevera (1,914 hp) all claim under 2.0 seconds. Road-legal EVs like the Tesla Model S Plaid achieve 1.99 seconds using launch control on prepped surfaces. Standard production cars rarely dip below 2.5 seconds.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand"><a href="/" class="logo">⚡ EV <span>Saves</span></a><p>Real EV Running Costs. Real Savings. Car Mod Calculators.</p></div>
+        <div class="footer-col"><h4>Car Mod Calculators</h4><ul><li><a href="/car-mods/hp-gain-calculator/">HP Gain</a></li><li><a href="/car-mods/quarter-mile-calculator/">Quarter Mile</a></li><li><a href="/car-mods/boost-pressure-calculator/">Boost Pressure</a></li><li><a href="/car-mods/">All Car Mods</a></li></ul></div>
+        <div class="footer-col"><h4>Site</h4><ul><li><a href="/about/">About</a></li><li><a href="/disclaimer/">Disclaimer</a></li><li><a href="/contact/">Contact</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 EV Saves. All rights reserved.</span><span>evsaves.com</span></div>
+    </div>
+  </footer>
+  <script type="module">
+    import { initNav, initFaq } from '/assets/js/utils.js';
+    import { initCalculator } from '/assets/js/calculators.js';
+    initNav(); initFaq();
+    initCalculator('zero-to-sixty', 'us', {});
+  </script>
+</body>
+</html>
